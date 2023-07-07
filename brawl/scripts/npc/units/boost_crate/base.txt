@@ -1,0 +1,86 @@
+"DOTAUnits"
+{
+	"npc_dota_boost_crate"	
+	{
+		// General
+		//----------------------------------------------------------------
+		"BaseClass"					"npc_dota_creep_neutral"
+		"Model"						"models/props_gameplay/treasure_chest001.vmdl"
+		"SoundSet"					"Creep_Good_Melee"
+		"Level"						"1"
+		"ModelScale" 				"1.25"
+
+		// Abilities
+		//----------------------------------------------------------------
+		"Ability1"					""
+
+		// Armor
+		//----------------------------------------------------------------
+		"ArmorPhysical"				"0"
+		"MagicalResistance"			"0"
+
+		// Attack
+		//----------------------------------------------------------------
+		"AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
+		"AttackDamageMin"			"0"
+		"AttackDamageMax"			"0"
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"0"
+		"AttackAnimationPoint"		"0"
+		"AttackAcquisitionRange"	"0"
+		"AttackRange"				"0"
+		"ProjectileModel"			""
+		"ProjectileSpeed"			"0"
+
+		// Attributes
+		//----------------------------------------------------------------
+		"AttributePrimary"			"DOTA_ATTRIBUTE_STRENGTH"
+		"AttributeBaseStrength"		"0"
+		"AttributeStrengthGain"		"0"
+		"AttributeBaseIntelligence"	"0"
+		"AttributeIntelligenceGain"	"0"
+		"AttributeBaseAgility"		"0"
+		"AttributeAgilityGain"		"0"
+
+		// Bounty
+		//----------------------------------------------------------------
+		"BountyXP"					"0"
+		"BountyGoldMin"				"0"
+		"BountyGoldMax"				"0"
+
+		// Bounds
+		//----------------------------------------------------------------
+		"BoundsHullName"			"DOTA_HULL_SIZE_REGULAR"
+		"RingRadius"				"45"
+		"HealthBarOffset"			"110"
+
+		// Movement
+		//----------------------------------------------------------------
+		"MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
+		"MovementSpeed"				"0"
+		"MovementTurnRate"			"1.0"
+
+		// Status
+		//----------------------------------------------------------------
+		"StatusHealth"				"300"
+		"StatusHealthRegen"			"0"
+		"StatusMana"				"0"
+		"StatusStartingMana"		"0"
+		"StatusManaRegen"			"0"
+
+		// Team
+		//----------------------------------------------------------------
+		"TeamName"					"DOTA_TEAM_NEUTRALS"
+		"CombatClassAttack"			"DOTA_COMBAT_CLASS_ATTACK_BASIC"
+		"CombatClassDefend"			"DOTA_COMBAT_CLASS_DEFEND_BASIC"
+		"UnitRelationshipClass"		"DOTA_NPC_UNIT_RELATIONSHIP_TYPE_WARD"
+
+		// Vision
+		//----------------------------------------------------------------
+		"VisionDaytimeRange"		"1"
+		"VisionNighttimeRange"		"1"
+
+		"DisableDamageDisplay"              "1"
+		"PathfindingSearchDepthScale"		"0.0"
+	}
+}
