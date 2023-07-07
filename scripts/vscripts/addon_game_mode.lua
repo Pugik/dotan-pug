@@ -23,7 +23,7 @@ function Activate()
 end
 
 
-function brawl:OnNPCSpawned(keys)   -- Функция срабатывает при спавне энтити (любого)
+function brawl:OnNPCSpawned(keys)   -- Функция срабатывает при спавне энтити (любого) / Прослушка в addon_game_config.lua (39 строка)
 	local entity = EntIndexToHScript(keys.entindex) 	-- init entity
 
 	if entity:IsRealHero() then
@@ -31,7 +31,7 @@ function brawl:OnNPCSpawned(keys)   -- Функция срабатывает п�
     end
 end
 
-function brawl:OnEntityKilled(keys) -- Функция срабатывает при убийстве любого энтити
+function brawl:OnEntityKilled(keys) -- Функция срабатывает при убийстве любого энтити / Прослушка в addon_game_config.lua (40 строка)
 	local entity = EntIndexToHScript(keys.entindex_killed) 	-- dead entity
 	local attacker = EntIndexToHScript(keys.entindex_attacker) 	-- attacker
 	
