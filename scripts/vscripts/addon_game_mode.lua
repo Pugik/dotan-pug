@@ -4,8 +4,8 @@ if brawl == nil then
 end
 
 -- input all libs and other lua files to here
-require( "lib/timers" )
-require( "addon_game_config" )
+require( "lib/timers" ) -- спиздил логику таймера из бирбона.
+require( "addon_game_config" ) -- addon_game_config.lua
 
 function Precache( context )
 	--[[
