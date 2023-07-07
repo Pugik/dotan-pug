@@ -1,7 +1,7 @@
 -- in gamemode.lua 
 function barebones:InitGameMode()
 {
-    GameRules:GetGameModeEntity():SetThink( "OnThink", self, "GlobalThink", 0 )
+    GameRules:GetGameModeEntity():SetThink( "OnThink", self, "GlobalThink", 1 )
 }
 
 -- in addon_game_mode.lua
