@@ -47,7 +47,7 @@ function modifier_wisp_info:OnDeath(params)
 		self.wisp:SetOwner(self:GetParent())
 		self.wisp:SetControllableByPlayer(self:GetParent():GetPlayerID(), true)
 
-		-- Делаем информацию что владелец подох и телепортируем его в центр арены
+		-- пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 		self:GetParent().death = true
 
 		local teleport_point=Entities:FindByClassname(nil, "info_player_start_dota")
@@ -67,12 +67,12 @@ end
 function modifier_wisp_info:OnRespawn(params)
 	if not IsServer() then return end
 
-	-- Дефолтные проверки что чел этот висп живой итд
+	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ
 	if params.unit ~= self:GetParent() then return end
 	if self.wisp == nil then return end
 	if not self.wisp:IsAlive() then return end
 
-	-- Избавляемся от виспа
+	-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 	GridNav:DestroyTreesAroundPoint(self.wisp:GetAbsOrigin(), 150, true)
 	FindClearSpaceForUnit(self:GetParent(), self.wisp:GetAbsOrigin(), true)
 	UTIL_Remove(self.wisp)
@@ -80,7 +80,7 @@ function modifier_wisp_info:OnRespawn(params)
 	self:GetParent().death = nil
 end
 
--- Модификаторы виспа
+-- пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
 
 wisp_info_alive = class({})
 
@@ -121,9 +121,11 @@ function wisp_info_alive:GetModifierMoveSpeed_Absolute()
     return 350
 end
 
+--[[
 function wisp_info_alive:GetTexture()
-	return "wodawisp"
+	return "wisp"
 end
+]]
 
 wisp_info_protect = class({})
 
@@ -172,6 +174,8 @@ function wisp_info_protect:CheckState()
     }
 end
 
+--[[
 function wisp_info_protect:GetTexture()
-	return "wodawispinvis"
+	return "wispinvis"
 end
+]]
