@@ -1,0 +1,236 @@
+// Dota Abilities Override File
+
+//
+// Я не тестил, потому что написал это всё в 2:20, поэтому могут быть ошибки.
+//
+
+//	(Смена иконки скилла, как показано в "courier_take_stash_items")
+//		"AbilityTextureName"			"test_name_icon" 
+//
+
+//
+// Пример, как можно сделать, если хочешь покороче. 
+//
+//	"courier_take_stash_items"
+//	{
+//		"AbilityTextureName"			"dotan_courier_take_stash_items"
+//	}
+//
+
+//
+// Я оставил способности курьера целыми, однако убрал пассивные, потому что у них нет иконок.
+//
+
+//
+// Все изображение способностей находятся в | resource/flash3/images/spellicons/ |
+//
+
+//
+// Первый из вариантов ( второй ниже ).
+//
+
+"DOTAAbilities"
+{
+	"Version"		"1"
+	
+	//=================================================================================================================
+	// Ability: Courier's Take items from Stash
+	//=================================================================================================================
+	"courier_take_stash_items"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5208"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_4"
+		
+		"AbilityTextureName"			"dotan_courier_take_stash_items"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"stash_pickup_distance"		"250"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"handoff_distance"		"400"
+			}
+
+		}
+		
+		"MaxLevel"		"1"
+	}
+	
+	//=================================================================================================================
+	// Ability: Courier's Go to Secret Shop 
+	//=================================================================================================================
+	"courier_go_to_secretshop"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5492"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		
+		"AbilityTextureName"			"dotan_courier_go_to_secretshop"
+		
+		"MaxLevel"		"1"
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_2"
+	}
+	
+	//=================================================================================================================
+	// Ability: Courier's Return Items to Stash
+	//=================================================================================================================
+	"courier_return_stash_items"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5207"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		
+		"AbilityTextureName"			"dotan_courier_return_stash_items"
+		
+		"MaxLevel"		"1"
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_3"
+	}
+	
+	//=================================================================================================================
+	// Ability: Courier Burst
+	//=================================================================================================================
+	"courier_burst"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5210"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_DONT_CANCEL_MOVEMENT | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		
+		"AbilityTextureName"			"dotan_courier_burst"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"120.0"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"		"FIELD_FLOAT"
+				"duration"		"6.0"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"movement_speed"	"50"
+			}
+		}
+		
+		"MaxLevel"		"1"
+	}
+	
+	//=================================================================================================================
+	// Ability: Courier's Transfer Items 
+	//=================================================================================================================
+	"courier_transfer_items"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5206"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_5"
+		
+		"AbilityTextureName"			"dotan_courier_transfer_items"
+
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"handoff_distance"		"400"
+			}
+		}
+		
+		"MaxLevel"		"1"
+	}
+	
+	//=================================================================================================================
+	// Ability: Courier Shield
+	//=================================================================================================================
+	"courier_shield"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+		"ID"					"5209"														// unique ID number for this ability.  Do not change this once established or it will invalidate collected stats.
+		"AbilityType"					"DOTA_ABILITY_TYPE_ULTIMATE"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_IGNORE_BACKSWING"
+		"MaxLevel"		"1"		
+		"AbilityCastAnimation"		"ACT_DOTA_CAST_ABILITY_5"
+		
+		"AbilityTextureName"			"dotan_courier_shield"
+		
+		// Time		
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"200.0"
+		
+		// Special
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"		"FIELD_FLOAT"
+				"duration"		"2.0"
+			}
+		}
+	}
+}
+
+//
+// Второй вариант.
+//
+
+"DOTAAbilities"
+{
+	"Version"		"1"
+	
+	"courier_take_stash_items"
+	{	
+		"AbilityTextureName"			"dotan_courier_take_stash_items"
+	}
+	"courier_go_to_secretshop"
+	{
+		"AbilityTextureName"			"dotan_courier_go_to_secretshop"
+	}
+	
+	"courier_return_stash_items"
+	{
+		"AbilityTextureName"			"dotan_courier_return_stash_items"
+	}
+	
+	"courier_burst"
+	{
+		"AbilityTextureName"			"dotan_courier_burst"
+	}
+	
+	"courier_transfer_items"
+	{
+		"AbilityTextureName"			"dotan_courier_transfer_items"
+	}
+
+	"courier_shield"
+	{
+		"AbilityTextureName"			"dotan_courier_shield"
+	}
+}
