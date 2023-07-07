@@ -15,7 +15,6 @@
 		"item"		"item_dust"	
 		"item"		"item_bottle"
 		"item"		"item_aghanims_shard"
-		
 	}
 
 	"attributes"

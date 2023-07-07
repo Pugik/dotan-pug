@@ -1,7 +1,0 @@
-#base units/boost_crate/base.txt
-#base units/wisp_death/base.txt
-
-// Units File
-"DOTAUnits"
-{	
-}
