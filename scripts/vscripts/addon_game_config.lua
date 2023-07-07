@@ -36,8 +36,8 @@ FOG_OF_WAR = false
 HERO_MAX_LEVEL = 1
 	
 function brawl:LoadGameConfig()
-	ListenToGameEvent( "npc_spawned", Dynamic_Wrap( brawl, "OnNPCSpawned" ), self )
-	ListenToGameEvent( "entity_killed", Dynamic_Wrap( brawl, "OnEntityKilled" ), self )
+	ListenToGameEvent( "npc_spawned", Dynamic_Wrap( brawl, "OnNPCSpawned" ), self ) -- Слушаем тут, запускаем функцию в addon_game_mode ( 30 строка )
+	ListenToGameEvent( "entity_killed", Dynamic_Wrap( brawl, "OnEntityKilled" ), self ) -- Слушаем тут, запускаем функцию в addon_game_mode ( 52 строка )
 
 	self._GameMode = GameRules:GetGameModeEntity()
 	
