@@ -5,7 +5,7 @@
 	{
 		"BaseClass"						"ability_lua"
 		"ScriptFile"					"lua_abilities/npc/courier/courier_unmoveable"
-		//"AbilityTextureName"			"axe_battle_hunger"
+		"AbilityTextureName"			"dotan_courier_unmoveable"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
 		"SpellImmunityType"				"SPELL_IMMUNITY_ENEMIES_YES"
