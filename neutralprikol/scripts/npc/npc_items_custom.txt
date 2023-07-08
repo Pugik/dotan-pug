@@ -1,0 +1,13 @@
+// Dota Items Override File
+
+"DOTAAbilities"
+{
+	"item_trusty_shovel" // Взял за пример (позже доделаю всё)
+	{
+		"ItemCost"						"1000"
+		"ItemIsNeutralDrop"				"0"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"1"
+		"Model"							"models/props_gameplay/neutral_box.vmdl"
+	}
+}
