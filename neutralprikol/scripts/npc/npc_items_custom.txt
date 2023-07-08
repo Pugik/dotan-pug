@@ -9,5 +9,6 @@
 		"ItemPurchasable"				"1"
 		"ItemSellable"					"1"
 		"Model"							"models/props_gameplay/neutral_box.vmdl"
+		"SecretShop"					"1"
 	}
 }
