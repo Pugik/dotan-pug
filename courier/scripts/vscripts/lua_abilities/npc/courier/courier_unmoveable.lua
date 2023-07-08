@@ -22,6 +22,7 @@ function modifier_courier_unmoveable:CheckState() -- Функция добавл
 	local state =
 	{
 		[MODIFIER_STATE_IGNORING_MOVE_AND_ATTACK_ORDERS] = true, -- При true - запрещает управлять юнитов / игроком, но не запрещает использовать скиллы.
+		[MODIFIER_STATE_IGNORING_STOP_ORDERS] = true, -- При true - игнорирует отмену движения или скилла, то-есть при нажатие S курьер продолжит движение.
 	}
 
 	return state -- Возвращаем стейт, чтобы он заработал.

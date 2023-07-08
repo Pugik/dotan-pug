@@ -24,11 +24,6 @@ end
 function testgamemode:InitGameMode()
 	self:LoadGameConfig()
 
-
-	if IsInToolsMode() then
-		Tutorial:AddBot("npc_dota_hero_antimage", "", "", false)
-	end
-
 	print( "Init Loaded" )
 end
 
@@ -37,10 +32,11 @@ end
 function testgamemode:OnNPCSpawned(keys)  -- Вызов функции из ивента игры в addon_game_config.lua (25 строка)
 	local entity = EntIndexToHScript(keys.entindex) 	-- init entity
 	
-	if entity:GetUnitName() == "npc_dota_courier" then		-- Если юнит - курьер, то заходим.
+	if entity:GetUnitName() == "npc_dota_courier" and entity.bFirstSpawned == nil then		-- Если юнит - курьер, то заходим.
+		entity.bFirstSpawned = true
 		print("Выдаем модификатор.")
 		entity:AddNewModifier(entity, entity, "modifier_courier_unmoveable", nil) -- Даем юниту модификатор, с кастомным скриптом из (scripts/vscripts/lua_abilities/npc/courier/courier_unmoveable.lua).
 		local ab1 = entity:AddAbility("courier_unmoveable") -- Даем юниту эту способности для корректной работы. (scripts/vscripts/lua_abilities/npc/courier/courier_unmoveable.lua).
-		ab1:SetHidden(true) -- Делает скилл невидимым из худа игрока.
+		ab1:SetHidden(true) -- Делает скилл невидимым в худе игрока.
 	end
 end
