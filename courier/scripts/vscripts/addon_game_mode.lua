@@ -32,7 +32,7 @@ function testgamemode:InitGameMode()
 	print( "Init Loaded" )
 end
 
--- Важная часть для выдачи курьеру новой способности, которая запрещает управлять и выбирать юнит.
+-- Важная часть для выдачи курьеру новой способности, которая запрещает управлять юнитом.
 -- Можешь адаптировать под свой код.
 function testgamemode:OnNPCSpawned(keys)  -- Вызов функции из ивента игры в addon_game_config.lua (25 строка)
 	local entity = EntIndexToHScript(keys.entindex) 	-- init entity
