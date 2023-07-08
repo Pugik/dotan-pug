@@ -6,9 +6,9 @@ LinkLuaModifier( "modifier_courier_unmoveable", "lua_abilities/npc/courier/couri
 
 modifier_courier_unmoveable = {} -- Создаем модификатор.
 
-function modifier_courier_unmoveable:IsHidden() -- Делает эффект на юните / игроке невидимым.
-	return false
-end
+function modifier_courier_unmoveable:IsHidden() return false end -- Делает эффект на юните / игроке невидимым.
+function modifier_courier_unmoveable:IsDebuff() return false end -- Это дебафф?
+function modifier_courier_unmoveable:RemoveOnDeath() return false end -- Удалять при смерти?
 
 function modifier_courier_unmoveable:OnCreated() -- Функция срабатывает при создании модификатора.
 	if not IsServer() then return end
