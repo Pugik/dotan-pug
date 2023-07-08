@@ -4,7 +4,6 @@ if testgamemode == nil then
 end
 
 -- input all libs and other lua files to here
-require( "lib/timers" )
 require( "addon_game_config" )
 
 function Precache( context )
