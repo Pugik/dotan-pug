@@ -3,17 +3,23 @@
 >
 > Сделал как базу.
 
-> > ***Main Folder (courier)***
+> > ****Main Folder (courier)****
 
->   **resource**
+>   ***resource***
 > >  *addon_englist.txt* -> в нем можно добавлять название и локализация для скиллов и предметов.
 > > > *./flash3/images/spellicons/* -> тут находятся иконки для скиллов.
 
->   **scripts**
-> >   *npc*
+>   ***scripts***
+> >   **npc**
 > > >  *npc_abilities_custom.txt* -> файл для определения кастомных способностей.
 > >
 > > > *npc_abilities_override.txt*  -> файл для изменения стандартных способностей.
 
-> > *vscripts* 
+> > **vscripts**
+> > > *addon_game_config.lua* -> файл для конфигурации режима.
+> > 
+> > > *addon_game_mode.lua* -> файл для инцелизации режима. ****(Внутри важная функция для выдачи курьеру способности!)****
+> >
+> > > ***lua_abilities/npc/courier***
+> > > > *courier_unmoveable.lua* -> файл с логикой для способности и её модификатора.
 
