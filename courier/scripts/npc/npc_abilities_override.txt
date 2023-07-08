@@ -5,7 +5,7 @@
 //
 
 //
-// Все изображение способностей находятся в | resource/flash3/images/spellicons/ |
+// Все изображения способностей находятся в | resource/flash3/images/spellicons/ |
 //
 
 "DOTAAbilities"
