@@ -1,9 +1,3 @@
--- Создаем способность.
-courier_untouchable = class({
-	GetIntrinsicModifierName = function() return "modifier_courier_untouchable" end -- Добавляем способности модификатор.
-})
-LinkLuaModifier( "modifier_courier_untouchable", "lua_abilities/npc/courier/courier_untouchable", LUA_MODIFIER_MOTION_NONE ) -- Линкуем модификатор.
-
 modifier_courier_untouchable = {} -- Создаем модификатор.
 
 function modifier_courier_untouchable:IsHidden() return false end -- Делает эффект на юните / игроке невидимым.
