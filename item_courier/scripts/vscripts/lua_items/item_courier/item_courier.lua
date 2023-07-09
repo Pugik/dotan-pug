@@ -13,8 +13,6 @@ function item_courier:OnSpellStart()
 	end
 	
 	if caster ~= nil then
-		--local courier = CreateUnitByName("npc_dota_courier", caster:GetAbsOrigin() + RandomVector( RandomFloat( 5, 10 ) ), true, player, player, caster:GetTeamNumber())
-		--courier:SetControllableByPlayer(player:GetPlayerID(), true)
 		local courier = player:SpawnCourierAtPosition(caster:GetAbsOrigin() + RandomVector( RandomFloat( 5, 10 )))
 		caster:AddNewModifier(caster, nil, "modifier_item_courier", nil)
 		caster:EmitSound("DOTA_Item.ClarityPotion.Activate")
