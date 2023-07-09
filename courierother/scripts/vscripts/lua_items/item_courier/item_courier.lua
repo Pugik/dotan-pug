@@ -15,7 +15,7 @@ function item_courier:OnSpellStart()
 	if caster ~= nil then
 		local courier = player:SpawnCourierAtPosition(caster:GetAbsOrigin() + RandomVector( RandomFloat( 5, 10 )))
 		caster:AddNewModifier(caster, nil, "modifier_item_courier", nil)
-		caster:EmitSound("Courier.Spawn")
+		courier:EmitSound("Courier.Spawn")
 		if caster_lvl >= 4 then
 			courier:UpgradeCourier(caster_lvl)
 		end
