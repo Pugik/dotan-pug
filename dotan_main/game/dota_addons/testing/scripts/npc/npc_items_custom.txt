@@ -1,0 +1,1178 @@
+//
+// Items Custom.
+//
+
+//
+//	Linking to other files.
+//
+
+// Do it this way because its much easier to perceive. (Yes, lots of different folders, but its better that way.)
+#base "lua_items/item_trident_custom/item_trident_custom.txt" // bla bla bla this custom trident.
+
+"DOTAAbilities"
+{
+	//
+	// Misc
+	//
+
+	"item_courier"
+	{	
+		"ItemCost"						"69"
+		"ItemPurchasable"				"1"
+	}
+
+	"item_tpscroll"
+	{
+		"GlobalShop"					"1"
+		"SecretShop"					"1"
+	}
+
+	"item_recipe_rapier"
+	{	
+		"IsObsolete"                    "1"
+		"ItemRecipe"					"0"
+	}
+
+	"item_rapier"
+	{	
+		"ItemPurchasable"				"0"
+	}
+
+
+	//
+	//
+	// Old Items
+	//
+	//
+
+	//=================================================================================================================
+	// Shout Shield
+	//=================================================================================================================
+	"item_stout_shield"
+	{
+		"ItemCost"						"320"
+		"ItemPurchasable"				"1"
+        "IsObsolete"                    "0"
+	}
+
+	//=================================================================================================================
+	// Recipe: Poor Mans Shield
+	//=================================================================================================================
+	"item_recipe_poor_mans_shield"
+	{
+		"ItemCost"						"0"	
+		"IsObsolete"					"0"
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_poor_mans_shield"
+		"ItemPurchasable"				"0"
+
+		"ItemRequirements"
+		{
+			"01"						"item_slippers;item_slippers;item_stout_shield*"
+		}
+
+	}
+
+	//=================================================================================================================
+	// Poor Mans Shield
+	//=================================================================================================================
+	"item_poor_mans_shield"
+	{
+		"Model"								"models/props_gameplay/red_box.vmdl"
+
+		"ItemCost"							"0"
+		"ItemShopTags"						"agi;block"
+		"ItemQuality"						"common"
+		"ItemAliases"						"pms;poor man's shield"
+		"ItemPurchasable"					"1"
+		"ItemIsNeutralDrop"					"0"
+		"DisplayOverheadAlertOnReceived" 	"0"
+		"ItemSellable"						"1"
+	}
+
+	//=================================================================================================================
+	// Recipe: Iron Talon
+	//=================================================================================================================
+	"item_recipe_iron_talon"
+	{
+		"ItemCost"						"325"	
+		"ItemPurchasable"				"1"
+		"IsObsolete"					"0"
+		
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_iron_talon"
+		"ItemRequirements"
+		{
+			"01"						"item_quelling_blade*;item_ring_of_protection"
+		}
+	}
+	
+	//=================================================================================================================
+	// Iron Talon
+	//=================================================================================================================
+	"item_iron_talon"
+	{
+		"AbilityCastRange"				"350"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"25.0"
+
+		"Model"							"models/props_gameplay/red_box.vmdl"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"25"
+		"ItemCost"						"100"
+		"ItemShopTags"					"damage" 
+		"ItemQuality"					"common"
+		"ItemAliases"					"quelling blade"
+		"ItemPurchasable"				"1"
+		"ItemIsNeutralDrop"				"0"
+		"DisplayOverheadAlertOnReceived" "0"
+		"ItemSellable"					"1"
+	}
+
+	//
+	//
+	// New Recipe's
+	//
+	//
+
+	"item_recipe_force_boots"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"						"item_datadriven"
+        "Model"							"models/props_gameplay/recipe.vmdl"
+        "AbilityTextureName"            "item_recipe"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"900"
+		"ItemShopTags"					""
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_force_boots"
+		"ItemRequirements"
+		{
+			"01"						"item_boots*;item_force_staff;item_ring_of_health;item_ring_of_health"
+		}
+	}
+
+	"item_recipe_fallen_sky"
+	{
+		"ItemCost"						"1350"	
+		"ItemShopTags"					""
+		"ItemIsNeutralDrop"				"0"
+		"ItemPurchasable"				"1"
+		"IsObsolete"					"0"
+		"ItemSellable"					"0"
+
+		"SecretShop"					"1"	
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_fallen_sky"
+		"ItemRequirements"
+		{
+			"01"						"item_blink*;item_meteor_hammer;"
+		}
+	}
+
+	"item_recipe_ironwood_tree"
+	{	
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"150"
+		"ItemIsNeutralDrop"				"0"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"0"
+
+		"SecretShop"					"1"	
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_ironwood_tree"
+		"ItemRequirements"
+		{
+			"01"						"item_branches;item_branches;item_branches"
+		}
+	}
+
+	"item_recipe_ring_of_aquila"
+	{
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"	
+		"ItemShopTags"					""
+		"ItemPurchasable"				"1"
+		"IsObsolete"					"0"
+
+		"SecretShop"					"1"	
+		
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_ring_of_aquila"
+		"ItemRequirements"
+		{
+			"01"						"item_wraith_band;item_ring_of_basilius"
+		}
+	}
+
+	"item_recipe_arcane_ring"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"						"item_datadriven"
+        "Model"							"models/props_gameplay/recipe.vmdl"
+        "AbilityTextureName"            "item_recipe"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"0"
+		"ItemShopTags"					""
+
+		"SecretShop"					"1"	
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_arcane_ring"
+		"ItemRequirements"
+		{
+			"01"						"item_energy_booster*;item_ring_of_protection"
+		}
+	}
+
+	"item_recipe_philosophers_stone"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"						"item_datadriven"
+        "Model"							"models/props_gameplay/recipe.vmdl"
+        "AbilityTextureName"            "item_recipe"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"250"
+		"ItemShopTags"					""
+
+		"SecretShop"					"1"	
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_philosophers_stone"
+		"ItemRequirements"
+		{
+			"01"						"item_courier*;item_energy_booster"
+		}
+	}
+
+	"item_recipe_giants_ring"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"						"item_datadriven"
+        "Model"							"models/props_gameplay/recipe.vmdl"
+        "AbilityTextureName"            "item_recipe"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"750"
+		"ItemShopTags"					""
+
+		"SecretShop"					"1"	
+
+		// Recipe
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemRecipe"					"1"
+		"ItemResult"					"item_giants_ring"
+		"ItemRequirements"
+		{
+			"01"						"item_reaver*;item_reaver;item_wind_lace;item_wind_lace"
+		}
+	}
+
+    //
+	//
+	// Boots
+	//
+	//
+
+	"item_recipe_travel_boots"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_travel_boots"
+	{
+		"SecretShop"					"1"
+		"ItemIsNeutralDrop"				"1"
+	}
+
+	"item_recipe_travel_boots_2"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_travel_boots_2"
+	{
+		"SecretShop"					"1"
+		"ItemIsNeutralDrop"				"1"
+	}
+    
+    //
+	//
+	// Secret Shop Items (Basics)
+	//
+	//
+
+		//
+		// 1
+		//
+
+	"item_ward_observer"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_ward_sentry"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_dust"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_smoke_of_deceit"
+	{
+		"SecretShop"					"1"
+	}
+
+		//
+		// 2
+		//
+
+	"item_magic_stick"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_tango"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_flask"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_faerie_fire"
+	{
+		"SecretShop"					"1"
+	}
+
+		//
+		// 3
+		//
+
+	"item_bottle"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_enchanted_mango"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_clarity"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_infused_raindrop"
+	{
+		"SecretShop"					"1"
+	}
+
+		//
+		// 4
+		//
+
+	"item_quelling_blade"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_branches"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_ring_of_regen"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_sobi_mask"
+	{
+		"SecretShop"					"1"
+	}
+
+		//
+		// 5
+		//
+
+	"item_boots"
+	{
+		"SecretShop"					"1"
+		"ItemIsNeutralDrop"				"1"
+	}
+
+	"item_wind_lace"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_headdress"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_recipe_urn_of_shadows"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_urn_of_shadows"
+	{
+		"SecretShop"					"1"
+	}
+
+		//
+		// 6
+		//
+
+	"item_tranquil_boots"
+	{
+		"SecretShop"					"1"
+		"ItemIsNeutralDrop"				"1"
+	}
+
+	"item_gloves"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_ring_of_protection"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_circlet"
+	{
+		"SecretShop"					"1"
+	}
+
+		//
+		// 7
+		//
+
+	"item_power_treads"
+	{
+		"SecretShop"					"1"
+		"ItemIsNeutralDrop"				"1"
+	}
+
+	"item_belt_of_strength"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_boots_of_elves"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_robe"
+	{
+		"SecretShop"					"1"
+	}
+
+		//
+		// 8
+		//
+
+	"item_phase_boots"
+	{
+		"SecretShop"					"1"
+		"ItemIsNeutralDrop"				"1"
+	}
+
+	"item_blades_of_attack"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_chainmail"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_fluffy_hat"
+	{
+		"SecretShop"					"1"
+	}
+
+		//
+		// 9
+		//
+
+	"item_arcane_boots"
+	{
+		"SecretShop"					"1"
+		"ItemIsNeutralDrop"				"1"
+	}
+
+	"item_void_stone"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_recipe_buckler"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_buckler"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_lifesteal"
+	{
+		"SecretShop"					"1"
+	}
+
+		//
+		// 10
+		//
+
+	"item_energy_booster"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_recipe_aether_lens"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_aether_lens"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_recipe_pavise"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_pavise"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_recipe_falcon_blade"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_falcon_blade"
+	{
+		"SecretShop"					"1"
+	}
+
+		//
+		// 11
+		//
+
+	"item_vitality_booster"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_ring_of_health"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_vanguard"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_pers"
+	{
+		"SecretShop"					"1"
+	}
+
+		//
+		// 12
+		//
+
+	"item_point_booster"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_soul_booster"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_recipe_lotus_orb"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_lotus_orb"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_recipe_octarine_core"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_octarine_core"
+	{
+		"SecretShop"					"1"
+	}
+
+		//
+		// 13
+		//
+
+	"item_recipe_veil_of_discord"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_veil_of_discord"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_recipe_ring_of_basilius"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_ring_of_basilius"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_recipe_bloodstone"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_bloodstone"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_recipe_vladmir"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_vladmir"
+	{
+		"SecretShop"					"1"
+	}
+
+		//
+		// 14
+		//
+
+	"item_recipe_soul_ring"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_soul_ring"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_crown"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_medallion_of_courage"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_voodoo_mask"
+	{
+		"SecretShop"					"1"
+	}
+
+		//
+		// 15
+		//
+	
+	"item_recipe_hand_of_midas"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_hand_of_midas"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_recipe_iron_talon"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_iron_talon"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_stout_shield"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_blight_stone"
+	{
+		"SecretShop"					"1"
+	}
+
+		//
+		// 16
+		//
+
+	"item_recipe_boots_of_bearing"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_boots_of_bearing"
+	{
+		"SecretShop"					"1"
+		"ItemIsNeutralDrop"				"1"
+	}
+
+	"item_recipe_ancient_janggo"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_ancient_janggo"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_orb_of_corrosion"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_orb_of_venom"
+	{
+		"SecretShop"					"1"
+	}
+
+		//
+		// 17
+		//
+
+	"item_recipe_guardian_greaves"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_guardian_greaves"
+	{
+		"SecretShop"					"1"
+		"ItemIsNeutralDrop"				"1"
+	}
+
+	"item_recipe_meteor_hammer"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_meteor_hammer"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_recipe_mekansm"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_mekansm"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_recipe_aeon_disk"
+	{
+		"SecretShop"					"1"	
+	}
+
+	"item_aeon_disk"
+	{
+		"SecretShop"					"1"
+	}
+
+    //
+	//
+	// Secret Shop Items (Upgraded)
+	//
+	//
+
+		//
+		// 1
+		//
+
+	"item_recipe_magic_wand"
+	{
+		"SecretShop"					"1"
+	}
+	
+	"item_recipe_bracer"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_recipe_wraith_band"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_recipe_null_talisman"
+	{
+		"SecretShop"					"1"
+	}
+	
+	"item_recipe_solar_crest"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_recipe_dagon_2"
+	{
+		"ItemCost"						"1150"
+
+		"SecretShop"					"1"
+
+		"ItemRequirements"
+		{
+			"02"						"item_dagon*"
+		}
+	}
+	
+	"item_recipe_dagon_3"
+	{
+		"ItemCost"						"1150"
+
+		"SecretShop"					"1"
+
+		"ItemRequirements"
+		{
+			"02"						"item_dagon_2*"
+		}
+	}
+
+	"item_recipe_dagon_4"
+	{
+		"ItemCost"						"1150"
+
+		"SecretShop"					"1"
+
+		"ItemRequirements"
+		{
+			"02"						"item_dagon_3*"
+		}
+	}
+
+	"item_recipe_dagon_5"
+	{
+		"ItemCost"						"1150"
+
+		"SecretShop"					"1"
+
+		"ItemRequirements"
+		{
+			"02"						"item_dagon_4*"
+		}
+	}
+	
+	"item_recipe_spirit_vessel"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_magic_wand"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_bracer"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_wraith_band"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_null_talisman"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_poor_mans_shield"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_solar_crest"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_spirit_vessel"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_dagon_2"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_dagon_3"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_dagon_4"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_dagon_5"
+	{
+		"SecretShop"					"1"
+	}
+
+	"item_force_boots"
+	{
+		"SecretShop"					"1"
+		
+		"ItemCost"						"600"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+
+		"ItemIsNeutralDrop"				"0"
+	}
+
+	"item_ironwood_tree"
+	{
+		"SecretShop"					"1"
+		
+		"ItemCost"						"600"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+
+		"ItemIsNeutralDrop"				"0"
+	}
+
+	"item_royal_jelly"
+	{
+		"SecretShop"					"1"
+		
+		"ItemCost"						"600"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+
+		"ItemIsNeutralDrop"				"0"
+	}
+
+	"item_ring_of_aquila"
+	{
+		"SecretShop"					"1"
+		
+		"ItemCost"						"600"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+
+		"ItemIsNeutralDrop"				"0"
+	}
+
+	"item_philosophers_stone"
+	{
+		"SecretShop"					"1"
+		
+		"ItemCost"						"600"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+
+		"ItemIsNeutralDrop"				"0"
+	}
+
+	"item_seeds_of_serenity"
+	{
+		"SecretShop"					"1"
+		
+		"ItemCost"						"600"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+
+		"ItemIsNeutralDrop"				"0"
+	}
+
+	"item_trusty_shovel"
+	{
+		"SecretShop"					"1"
+		
+		"ItemCost"						"600"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+
+		"ItemIsNeutralDrop"				"0"
+	}
+
+	"item_fallen_sky"
+	{
+		"SecretShop"					"1"
+		
+		"ItemCost"						"600"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+
+		"ItemIsNeutralDrop"				"0"
+	}
+
+	"item_unstable_wand" // pig pole
+	{
+		"SecretShop"					"1"
+		
+		"ItemCost"						"600"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+
+		"ItemIsNeutralDrop"				"0"
+	}
+
+	"item_giants_ring"
+	{
+		"SecretShop"					"1"
+		
+		"ItemCost"						"600"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+
+		"ItemIsNeutralDrop"				"0"
+	}
+
+	"item_arcane_ring"
+	{
+		"SecretShop"					"1"
+		
+		"ItemCost"						"600"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+
+		"ItemIsNeutralDrop"				"0"
+	}
+
+	//
+	// Other in Upgraded
+	//
+
+	"item_demon_edge"
+	{
+		"GlobalShop"					"1"
+	}
+
+	"item_reaver"
+	{
+		"GlobalShop"					"1"
+	}
+
+	"item_eagle"
+	{
+		"GlobalShop"					"1"
+	}
+
+	"item_mystic_staff"
+	{
+		"GlobalShop"					"1"
+	}
+
+	"item_relic"
+	{
+		"GlobalShop"					"1"
+	}
+
+	"item_platemail"
+	{
+		"GlobalShop"					"1"
+	}
+
+	"item_hyperstone"
+	{
+		"GlobalShop"					"1"
+	}
+
+	"item_talisman_of_evasion"
+	{
+		"GlobalShop"					"1"
+	}
+
+	"item_ultimate_orb"
+	{
+		"GlobalShop"					"1"
+	}
+
+	"item_cornucopia"
+	{
+		"GlobalShop"					"1"
+	}
+}

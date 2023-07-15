@@ -1,0 +1,537 @@
+//
+// Shops List (12.07.23)
+//
+
+"dota_shops"
+{
+	//
+	//
+	// Basics Items -> Secret Shop (Equipment in localization)
+	//
+	//
+	
+	"weapons_armor" 
+	{				
+		//
+		// 1
+		//
+		
+		"item"		"item_ward_observer"
+		"item"		"item_ward_sentry"
+		"item"		"item_dust"
+		"item"		"item_smoke_of_deceit"
+		
+		//
+		// 2
+		//
+		
+		"item"		"item_magic_stick"
+		"item"		"item_tango"
+		"item"		"item_flask"
+		"item"		"item_faerie_fire"
+		
+		//
+		// 3
+		//
+	
+		"item"		"item_bottle"
+		"item"		"item_enchanted_mango"
+		"item"		"item_clarity"	
+		"item"		"item_infused_raindrop"
+		
+		//
+		// 4
+		//
+		
+		"item"		"item_quelling_blade"
+		"item"		"item_branches"
+		"item"		"item_ring_of_regen"
+		"item"		"item_sobi_mask"
+		
+		//
+		// 5
+		//
+		
+		"item"		"item_boots"
+		"item"		"item_wind_lace"
+		"item"		"item_headdress"
+		"item"		"item_urn_of_shadows" 
+		
+		//
+		// 6
+		//
+		
+		"item"		"item_tranquil_boots"
+		"item"		"item_gloves"
+		"item"		"item_ring_of_protection"
+		"item"		"item_circlet"	 
+		
+		//
+		// 7
+		//
+		
+		"item"		"item_power_treads"
+		"item"		"item_belt_of_strength"
+		"item"		"item_boots_of_elves"
+		"item"		"item_robe"	
+	
+		//
+		// 8
+		//
+		
+
+		"item"		"item_phase_boots"
+		"item"		"item_blades_of_attack"
+		"item"		"item_chainmail"
+		"item"		"item_fluffy_hat"	
+
+		//
+		// 9
+		//		
+		
+		"item"		"item_arcane_boots"
+		"item"		"item_void_stone"
+		"item"		"item_buckler"
+		"item"		"item_lifesteal"	
+		
+		//
+		// 10
+		//		
+		
+		"item"		"item_energy_booster"
+		"item"		"item_aether_lens"
+		"item"		"item_pavise" 
+		"item"		"item_falcon_blade"	
+		
+		//
+		// 11
+		//		
+		
+		"item"		"item_vitality_booster"
+		"item"		"item_ring_of_health"
+		"item"		"item_vanguard"
+		"item"		"item_pers"
+		
+		//
+		// 12
+		//		
+		
+		"item"		"item_point_booster"
+		"item"		"item_soul_booster"
+		"item"		"item_lotus_orb"
+		"item"		"item_octarine_core"	
+		
+		//
+		// 13
+		//		
+		
+		"item"		"item_veil_of_discord"
+		"item"		"item_ring_of_basilius"
+		"item"		"item_bloodstone"
+		"item"		"item_vladmir"	
+	
+		//
+		// 14
+		//		
+		
+		"item"		"item_soul_ring"
+		"item"		"item_crown"
+		"item"		"item_medallion_of_courage" 
+		"item"		"item_voodoo_mask"		
+		
+		//
+		// 15
+		//		
+		
+		"item"		"item_hand_of_midas"
+		"item"		"item_iron_talon"
+		"item"		"item_stout_shield"
+		"item"		"item_blight_stone"	
+		
+		//
+		// 16
+		//		
+		
+		"item"		"item_boots_of_bearing"
+		"item"		"item_ancient_janggo"
+		"item"		"item_orb_of_corrosion"
+		"item"		"item_orb_of_venom"	
+		
+		//
+		// 17
+		//		
+		
+		"item"		"item_guardian_greaves"
+		"item"		"item_meteor_hammer"
+		"item"		"item_mekansm"
+		"item"		"item_aeon_disk"		
+	}
+
+	//
+	//
+	// Basics Items -> Equipment (Secret Shop in localization)
+	//
+	//
+
+	"secretshop"
+	{
+		//
+		// 1
+		//		
+		
+		"item"		"item_courier" 
+		"item"		"item_gauntlets"
+		"item"		"item_slippers"
+		"item"		"item_mantle"
+		
+		//
+		// 2
+		//		
+		
+		"item"		"item_force_staff" 
+		"item"		"item_bracer"
+		"item"		"item_wraith_band"
+		"item"		"item_null_talisman"
+		//
+		// 3
+		//		
+		
+		"item"		"item_black_king_bar" 
+		"item"		"item_helm_of_iron_will"
+		"item"		"item_blitz_knuckles"
+		"item"		"item_javelin"
+		
+		//
+		// 4
+		//		
+		
+		"item"		"item_monkey_king_bar" 
+		"item"		"item_claymore"
+		"item"		"item_broadsword"
+		"item"		"item_quarterstaff"
+		
+		//
+		// 5
+		//		
+		
+		"item"		"item_orchid" 
+		"item"		"item_ogre_axe"
+		"item"		"item_blade_of_alacrity"
+		"item"		"item_staff_of_wizardry"
+		
+		//
+		// 6
+		//		
+		
+		"item"		"item_basher" 
+		"item"		"item_sange"
+		"item"		"item_yasha"
+		"item"		"item_kaya"
+		
+		//
+		// 7
+		//		
+		
+		"item"		"item_oblivion_staff" 
+		"item"		"item_heavens_halberd"
+		"item"		"item_manta"
+		"item"		"item_ethereal_blade"	
+
+		//
+		// 8
+		//		
+		
+		"item"		"item_rod_of_atos" 
+		"item"		"item_echo_sabre"
+		"item"		"item_dragon_lance"
+		"item"		"item_witch_blade"	
+
+		//
+		// 9
+		//		
+		
+		"item"		"item_invis_sword" 
+		"item"		"item_nullifier"
+		"item"		"item_diffusal_blade"
+		"item"		"item_mage_slayer"	
+
+		//
+		// 10
+		//		
+		
+		"item"		"item_desolator" 
+		"item"		"item_lesser_crit"
+		"item"		"item_butterfly"
+		"item"		"item_maelstrom"	
+
+		//
+		// 11
+		//		
+		
+		"item"		"item_dagon" 
+		"item"		"item_satanic"
+		"item"		"item_phylactery"
+		"item"		"item_sheepstick"	
+
+		//
+		// 12
+		//		
+		
+		"item"		"item_radiance" 
+		"item"		"item_crimson_guard"
+		"item"		"item_heart"
+		"item"		"item_skadi"	
+		
+		//
+		// 13
+		//		
+		
+		"item"		"item_helm_of_the_dominator" 
+		"item"		"item_blade_mail"
+		"item"		"item_assault"
+		"item"		"item_shivas_guard"	
+	
+		//
+		// 14
+		//		
+		
+		"item"		"item_mask_of_madness" 
+		"item"		"item_eternal_shroud"
+		"item"		"item_diadem"
+		"item"		"item_cloak"	
+
+		//
+		// 15
+		//		
+		
+		"item"		"item_armlet" 
+		"item"		"item_holy_locket"
+		"item"		"item_shadow_amulet"
+		"item"		"item_cyclone"	
+
+		//
+		// 16
+		//		
+		
+		"item"		"item_abyssal_blade" 
+		"item"		"item_moon_shard"
+		"item"		"item_pipe"
+		"item"		"item_ghost"	
+
+		//
+		// 17
+		//		
+		
+		"item"		"item_mithril_hammer"
+		"item"		"item_sphere"
+		"item"		"item_refresher"
+		"item"		"item_gem"	
+	}
+
+	//
+	//
+	// Upgraded Items -> Basics (Artifacts in localization)
+	//
+	//
+
+	"basics"
+	{
+		//
+		// 1
+		//		
+		
+		"item"		"item_magic_wand"
+		"item"		"item_bracer"
+		"item"		"item_wraith_band"
+		"item"		"item_null_talisman"		
+		
+
+		//
+		// 2
+		//		
+		
+		"item"		"item_travel_boots"
+		"item"		"item_poor_mans_shield"
+		"item"		"item_solar_crest"
+		"item"		"item_spirit_vessel"
+
+		//
+		// 3
+		//		
+		
+		"item"		"item_travel_boots_2"
+		"item"		"item_seeds_of_serenity"
+		"item"		"item_royal_jelly"
+		"item"		"item_dagon_2"
+
+		//
+		// 4
+		//		
+		
+		"item"		"item_fallen_sky"
+		"item"		"item_ironwood_tree"
+		"item"		"item_ring_of_aquila"
+		"item"		"item_dagon_3"
+
+		//
+		// 5
+		//		
+		
+		"item"		"item_force_boots"
+		"item"		"item_unstable_wand"
+		"item"		"item_arcane_ring"
+		"item"		"item_dagon_4"	
+
+		//
+		// 6
+		//		
+		
+		"item"		"item_trusty_shovel"
+		"item"		"item_philosophers_stone"
+		"item"		"item_giants_ring"
+		"item"		"item_dagon_5"	
+	}
+
+	//
+	//
+	// Upgraded Items -> Support (Basics in localization)
+	//
+	//
+
+	"support"
+	{
+		//
+		// 1
+		//		
+		
+		"item"		"item_harpoon"
+		"item"		"item_overwhelming_blink"
+		"item"		"item_swift_blink"
+		"item"		"item_arcane_blink"	
+
+		//
+		// 2
+		//		
+		
+		"item"		"item_hurricane_pike"
+		"item"		"item_sange_and_yasha"
+		"item"		"item_kaya_and_sange"
+		"item"		"item_yasha_and_kaya"	
+		
+		//
+		// 3
+		//		
+		
+		"item"		"item_bfury"
+		"item"		"item_greater_crit"
+		"item"		"item_silver_edge"
+		"item"		"item_gungir"	
+
+		//
+		// 4
+		//		
+		
+		"item"		"item_bloodthorn"
+		"item"		"item_revenants_brooch"
+		"item"		"item_disperser"
+		"item"		"item_mjollnir"	
+
+		//
+		// 5
+		//		
+		
+		"item"		"item_helm_of_the_overlord"
+		"item"		"item_wind_waker"
+		"item"		"item_trident_custom"
+	}
+	
+	//
+	//
+	// Upgraded Items -> Magics (Misc in localization)
+	//
+	//
+
+	"magics"
+	{
+		"item"		"item_tpscroll"
+	}
+
+	//
+	//
+	// Upgraded Items -> Defense (Artifacts in localization)
+	//
+	//
+
+	"defense"
+	{
+		//
+		// 1
+		//		
+		
+		"item"		"item_demon_edge"
+		"item"		"item_reaver"
+		"item"		"item_eagle"
+		"item"		"item_mystic_staff"	
+
+		//
+		// 2
+		//		
+		
+		"item"		"item_relic"
+		"item"		"item_platemail"
+		"item"		"item_hyperstone"
+		"item"		"item_talisman_of_evasion"	
+		
+		//
+		// 3
+		//		
+		
+		"item"		"item_ultimate_orb"
+		"item"		"item_cornucopia"
+	}
+	
+	//
+	//
+	// Магазин после выбора персонажа.
+	//
+	//
+
+	"pregame"
+	{
+		"item"		"item_clarity"
+		"item"		"item_faerie_fire"
+		"item"		"item_enchanted_mango"
+		"item"		"item_tango"
+		"item"		"item_flask"
+		"item"		"item_smoke_of_deceit"
+		"item"		"item_dust"
+		"item"		"item_ward_observer"
+		"item"		"item_ward_sentry"
+		"item"		"item_blood_grenade"
+		"item"		"item_branches"
+		"item"		"item_gauntlets"
+		"item"		"item_slippers"
+		"item"		"item_mantle"
+		"item"		"item_circlet"
+		"item"		"item_recipe_magic_wand"
+		"item"		"item_ring_of_protection"
+		"item"		"item_quelling_blade"
+		"item"		"item_fluffy_hat"
+		"item"		"item_blight_stone"
+		"item"		"item_orb_of_venom"
+		"item"		"item_wind_lace"
+		"item"		"item_magic_stick"
+		"item"		"item_sobi_mask"
+		"item"		"item_ring_of_regen"
+		"item"		"item_boots"
+		"item"		"item_gloves"
+		"item"		"item_crown"
+		"item"		"item_wraith_band"
+		"item"		"item_null_talisman"
+		"item"		"item_bracer"
+		"item"		"item_blades_of_attack"
+		"item"		"item_ring_of_basilius"
+		"item"		"item_buckler"
+		"item"		"item_headdress"
+	}
+}

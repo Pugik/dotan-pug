@@ -1,0 +1,7 @@
+"DOTAUnits"
+{	
+    "npc_dota_courier"
+	{
+        "Ability6"					"generic_hidden" // выключаем способность у курьера, которая дает ему щит.
+    }
+}

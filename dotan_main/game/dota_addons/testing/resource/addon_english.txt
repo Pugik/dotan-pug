@@ -1,0 +1,46 @@
+"lang"
+{
+	"Language"	"English"
+	
+	"Tokens"
+	{
+		"addon_game_mode"		"Dota N"
+		
+		//-------------------------------------------------------------------
+		//	Items
+		//-------------------------------------------------------------------
+	
+			//-------------------------------------------------------------------
+			//	item_trident_custom
+			//-------------------------------------------------------------------
+
+		"DOTA_Tooltip_Ability_item_trident_custom"										"Trident"
+		
+		"DOTA_Tooltip_Ability_item_trident_custom_Description"							"Combines Sange, Yasha and Kaya together."
+		"DOTA_Tooltip_Ability_item_trident_custom_bonus_intellect"						"+$int"
+		"DOTA_Tooltip_Ability_item_trident_custom_bonus_strength"						"+$str"
+		"DOTA_Tooltip_Ability_item_trident_custom_bonus_agility"						"+$agi"
+		"DOTA_Tooltip_Ability_item_trident_custom_spell_amp"							"%+Spell Amplification"
+		"DOTA_Tooltip_Ability_item_trident_custom_mana_regen_multiplier"				"%+Mana Regen Amplification"
+		"DOTA_Tooltip_Ability_item_trident_custom_bonus_attack_speed"					"+$attack"
+		"DOTA_Tooltip_Ability_item_trident_custom_movement_speed_percent_bonus"			"%+$move_speed"		
+		"DOTA_Tooltip_Ability_item_trident_custom_status_resistance"					"%+Status Resistance"
+		"DOTA_Tooltip_Ability_item_trident_custom_hp_regen_amp"							"%+Health Regen and Lifesteal Amp"
+		"DOTA_Tooltip_Ability_item_trident_custom_magic_damage_attack"					"+Magic Damage Attack"
+		"DOTA_Tooltip_Ability_item_trident_custom_spell_lifesteal_amp"					"%+Spell Lifesteal Amplification"
+
+		"DOTA_Tooltip_Ability_item_recipe_trident_custom"								"Trident Recipe"
+
+		//-------------------------------------------------------------------
+		//	Shop Tabs
+		//-------------------------------------------------------------------	
+
+		"DOTA_SUBSHOP_WEAPONS_ARMOR"		"Secret Shop" 
+		"DOTA_SUBSHOP_SECRETSHOP"			"Equipment"
+
+		"DOTA_SUBSHOP_BASICS"		"Secret Shop"
+		"DOTA_SUBSHOP_SUPPORT"		"Equipment" 
+		"DOTA_SUBSHOP_MAGICS"		"Miscellaneous" 
+		"DOTA_SUBSHOP_DEFENSE"		"Artifacts"
+	}
+}

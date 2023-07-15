@@ -1,0 +1,46 @@
+"lang"
+{
+	"Language"	"Russian"
+	
+	"Tokens"
+	{
+		"addon_game_mode"		"Dota N"
+		
+		//-------------------------------------------------------------------
+		//	Items
+		//-------------------------------------------------------------------
+	
+			//-------------------------------------------------------------------
+			//	item_trident_custom
+			//-------------------------------------------------------------------
+
+		"DOTA_Tooltip_Ability_item_trident_custom"										"Trident"
+		
+		"DOTA_Tooltip_Ability_item_trident_custom_Description"							"Сочетает предметы Sange, Yasha и Kaya в один."
+		"DOTA_Tooltip_Ability_item_trident_custom_bonus_intellect"						"+$int"
+		"DOTA_Tooltip_Ability_item_trident_custom_bonus_strength"						"+$str"
+		"DOTA_Tooltip_Ability_item_trident_custom_bonus_agility"						"+$agi"
+		"DOTA_Tooltip_Ability_item_trident_custom_spell_amp"							"%+к урону от заклинаний"
+		"DOTA_Tooltip_Ability_item_trident_custom_mana_regen_multiplier"				"%+к усилению восстановления маны"
+		"DOTA_Tooltip_Ability_item_trident_custom_bonus_attack_speed"					"+$attack"
+		"DOTA_Tooltip_Ability_item_trident_custom_movement_speed_percent_bonus"			"%+$move_speed"		
+		"DOTA_Tooltip_Ability_item_trident_custom_status_resistance"					"%+к сопротивлению эффектам"
+		"DOTA_Tooltip_Ability_item_trident_custom_hp_regen_amp"							"%+к здоровью от восстановления и вампиризма"
+		"DOTA_Tooltip_Ability_item_trident_custom_magic_damage_attack"					"+к маг. урону от атак"
+		"DOTA_Tooltip_Ability_item_trident_custom_spell_lifesteal_amp"					"%+к усилению вампиризма от заклинаний"
+
+		"DOTA_Tooltip_Ability_item_recipe_trident_custom"								"Trident Recipe"
+
+		//-------------------------------------------------------------------
+		//	Shop Tabs
+		//-------------------------------------------------------------------	
+
+		"DOTA_SUBSHOP_WEAPONS_ARMOR"		"Потайная лавка" 
+		"DOTA_SUBSHOP_SECRETSHOP"			"Снаряжение"
+
+		"DOTA_SUBSHOP_BASICS"		"Потайная лавка"
+		"DOTA_SUBSHOP_SUPPORT"		"Снаряжение" 
+		"DOTA_SUBSHOP_MAGICS"		"Разное" 
+		"DOTA_SUBSHOP_DEFENSE"		"Артефакты"
+	}
+}
