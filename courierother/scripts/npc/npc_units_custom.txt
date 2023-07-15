@@ -1,8 +1,0 @@
-// Units File
-"DOTAUnits"
-{
-	"npc_dota_courier"
-	{
-		"Ability6"					"generic_hidden"		
-	}
-}
