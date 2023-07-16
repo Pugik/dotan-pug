@@ -1,11 +1,15 @@
 <root> 
   	<script>	
 		//
-        // Just find HUDElements in panorama
+        // Just find HUDElements in panorama 
         //
 
+        var Parent = $.GetContextPanel().GetParent().GetParent()
         var newUI = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements");
-		
+
+        //main panel
+        //newUI.FindChildTraverse("GridShopHeaders").style.padding = "0.0px 0.0px 0.0px 0.0px";
+
         // 
         // Disable neutral tab
         //
@@ -20,8 +24,6 @@
         
         newUI.FindChildTraverse("GridUpgradesTab").style.width = "200px";
         newUI.FindChildTraverse("GridUpgradesTab").style.margin = "0.0px 0.0px 0.0px 0.0px";
-
-        newUI.FindChildTraverse("GridShopHeaders").style.padding = "0.0px 0.0px 0.0px 0.0px";
 
         // 
         // Legendary One Pixel Lift 
@@ -53,8 +55,6 @@
         //  Most of the code where im trying to change normal shop panorama associated with the secretshop.
         //
         //
-
-        var Parent = $.GetContextPanel().GetParent().GetParent()
 
         function SecretUI()
 		{
@@ -99,7 +99,7 @@
             }
         }
 
-        function SecretOtherUI()
+        function OtherUI()
         {
             if (Parent.FindChildTraverse("GameAndPlayersRoot") != undefined)
             {
@@ -132,23 +132,31 @@
                     ff.FindChildTraverse("SecretShop").style.visibility = "collapse";
                 }
 
+                // 
+                // Disable teleport neutral items to stash...
+                //
+                if (Parent.FindChildTraverse("ContextMenuManager").FindChildTraverse("ContextMenuBody") != null)
+                {
+                   Parent.FindChildTraverse("ContextMenuManager").FindChildTraverse("ContextMenuBody").FindChildTraverse("Contents").FindChildTraverse("TeleportToNeutralStash").style.visibility = "collapse";
+                }
+
                 //
                 // We need a constant loop or check (which idk how to write lul), because this panel is updated by player actions.
                 //
                 // TODO: try to do check, because "loop" sounds like bullshit.
                 //
 
-                $.Schedule(0.1, SecretOtherUI) // idk how it affects at optimisation, idk how to do it any other way yet. cannyCat
+                $.Schedule(0.1, OtherUI) // idk how it affects at optimisation, idk how to do it any other way yet. cannyCat
             }
             else
             {
-                $.Msg("Trying in SecretOtherUI!");
-                $.Schedule(1, SecretOtherUI)
+                $.Msg("Trying in OtherUI!");
+                $.Schedule(1, OtherUI)
             }
         }
 
         SecretUI();
-        SecretOtherUI();
+        OtherUI();
 
     </script>
 
