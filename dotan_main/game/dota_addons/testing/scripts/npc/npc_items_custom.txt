@@ -999,7 +999,7 @@
 		"ItemSellable"					"1"
 		"ItemKillable"					"1"
 
-		"ItemIsNeutralDrop"				"0"
+		"ItemIsNeutralDrop"				"1"
 	}
 
 	"item_ironwood_tree"
