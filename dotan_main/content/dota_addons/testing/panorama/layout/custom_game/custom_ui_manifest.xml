@@ -39,6 +39,14 @@
         //
 
         newUI.FindChildTraverse("lower_hud").FindChildTraverse("shop_launcher_block").FindChildTraverse("stash").style.margin = "0.0px 0.0px 46.0px 0.0px";
+
+        //
+        // Improving the item guide panel.
+        //
+        // Just resize item guide panel to recipe panel. (default value = 814px - looks terrible.) 
+        //
+
+        newUI.FindChildTraverse("GuideFlyout").style.height = "834px";
         
         //
         //
@@ -52,8 +60,6 @@
 		{
             if (Parent.FindChildTraverse("GameAndPlayersRoot") != undefined)
             {
-                //Main
-
                 //
                 // Removing the secret shop icon and changing the icon borders. (First Tab / First Line of Items)
                 //
