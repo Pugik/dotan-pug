@@ -180,18 +180,18 @@
 		//		
 		
 		"item"		"item_courier" 
-		"item"		"item_gauntlets"
-		"item"		"item_slippers"
-		"item"		"item_mantle"
+		"item"		"item_blink"
+		"item"		"item_glimmer_cape"
+		"item"		"item_blood_grenade"
 		
 		//
 		// 2
 		//		
 		
 		"item"		"item_force_staff" 
-		"item"		"item_bracer"
-		"item"		"item_wraith_band"
-		"item"		"item_null_talisman"
+		"item"		"item_gauntlets"
+		"item"		"item_slippers"
+		"item"		"item_mantle"
 		//
 		// 3
 		//		
