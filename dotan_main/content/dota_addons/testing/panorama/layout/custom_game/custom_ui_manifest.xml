@@ -7,9 +7,6 @@
         var Parent = $.GetContextPanel().GetParent().GetParent()
         var newUI = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements");
 
-        //main panel
-        //newUI.FindChildTraverse("GridShopHeaders").style.padding = "0.0px 0.0px 0.0px 0.0px";
-
         // 
         // Disable neutral tab
         //
@@ -130,14 +127,6 @@
                     ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/kalodota2/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
                 
                     ff.FindChildTraverse("SecretShop").style.visibility = "collapse";
-                }
-
-                // 
-                // Disable teleport neutral items to stash...
-                //
-                if (Parent.FindChildTraverse("ContextMenuManager").FindChildTraverse("ContextMenuBody") != null)
-                {
-                   Parent.FindChildTraverse("ContextMenuManager").FindChildTraverse("ContextMenuBody").FindChildTraverse("Contents").FindChildTraverse("TeleportToNeutralStash").style.visibility = "collapse";
                 }
 
                 //
