@@ -10,18 +10,18 @@
         // Disable neutral tab
         //
 
-		newUI.FindChildTraverse("GridMainTabs").FindChildTraverse("GridNeutralsTab").style.visibility = "collapse";
+		newUI.FindChildTraverse("GridNeutralsTab").style.visibility = "collapse";
 
         //
         // Resize remaining shop tabs
         //
 
-        newUI.FindChildTraverse("GridMainTabs").FindChildTraverse("GridBasicsTab").style.width = "200px";
+        newUI.FindChildTraverse("GridBasicsTab").style.width = "200px";
         
-        newUI.FindChildTraverse("GridMainTabs").FindChildTraverse("GridUpgradesTab").style.width = "200px";
-        newUI.FindChildTraverse("GridMainTabs").FindChildTraverse("GridUpgradesTab").style.margin = "0.0px 0.0px 0.0px 0.0px";
+        newUI.FindChildTraverse("GridUpgradesTab").style.width = "200px";
+        newUI.FindChildTraverse("GridUpgradesTab").style.margin = "0.0px 0.0px 0.0px 0.0px";
 
-        newUI.FindChildTraverse("Main").FindChildTraverse("HeightLimiter").FindChildTraverse("GridMainShop").FindChildTraverse("GridShopHeaders").style.padding = "0.0px 0.0px 0.0px 0.0px";
+        newUI.FindChildTraverse("GridShopHeaders").style.padding = "0.0px 0.0px 0.0px 0.0px";
 
         // 
         // Legendary One Pixel Lift 
@@ -29,8 +29,8 @@
         // Raised the list of items so that it is not on top of the anchored items.
         //
 
-        newUI.FindChildTraverse("Main").FindChildTraverse("HeightLimiter").FindChildTraverse("GridMainShop").FindChildTraverse("GridMainShopContents").FindChildTraverse("GridBasicItemsCategory").FindChildTraverse("GridBasicItems").style.padding = "-3.0px 0.0px 0.0px 0.0px";
-        newUI.FindChildTraverse("Main").FindChildTraverse("HeightLimiter").FindChildTraverse("GridMainShop").FindChildTraverse("GridMainShopContents").FindChildTraverse("GridUpgradesCategory").FindChildTraverse("GridUpgradeItems").style.padding = "-3.0px 0.0px 0.0px 0.0px";
+        newUI.FindChildTraverse("GridMainShopContents").FindChildTraverse("GridBasicItemsCategory").FindChildTraverse("GridBasicItems").style.padding = "-3.0px 0.0px 0.0px 0.0px";
+        newUI.FindChildTraverse("GridMainShopContents").FindChildTraverse("GridUpgradesCategory").FindChildTraverse("GridUpgradeItems").style.padding = "-3.0px 0.0px 0.0px 0.0px";
 	
         //
         // Stash Fix (volve hello?)
@@ -88,17 +88,17 @@
             }
             else
             {
-                $.Msg("Trying!");
+                $.Msg("Trying in SecretUI!");
                 $.Schedule(1, SecretUI)
             }
         }
 
-        function SecretAnchoredandReciped()
+        function SecretOtherUI()
         {
             if (Parent.FindChildTraverse("GameAndPlayersRoot") != undefined)
             {
                 //
-                // Removing the secret shop icon and changing the icon borders. (Anchored Items)
+                // Changing the icon borders. (Anchored Items)
                 //
 
                 for (var ff of newUI.FindChildTraverse("ItemCombinesAndBasicItemsContainer").FindChildTraverse("ItemList").FindChildrenWithClassTraverse("SecretShopItem")) 
@@ -107,7 +107,7 @@
                 }
 
                 //
-                // Removing the secret shop icon and changing the icon borders. (Reciped Items)
+                // Changing the icon borders. (Reciped Items)
                 //
 
                 for (var ff of newUI.FindChildTraverse("ItemCombinesAndBasicItemsContainer").FindChildTraverse("ItemsContainer").FindChildrenWithClassTraverse("SecretShopItem")) 
@@ -116,22 +116,33 @@
                 } 
 
                 //
+                // Removing the secret shop icon and changing the icon borders. (Guide Items)
+                //
+
+                for (var ff of newUI.FindChildTraverse("ItemBuild").FindChildTraverse("Categories").FindChildrenWithClassTraverse("SecretShopItem")) 
+                {
+                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/kalodota2/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
+                
+                    ff.FindChildTraverse("SecretShop").style.visibility = "collapse";
+                }
+
+                //
                 // We need a constant loop or check (which idk how to write lul), because this panel is updated by player actions.
                 //
                 // TODO: try to do check, because "loop" sounds like bullshit.
                 //
 
-                $.Schedule(0.1, SecretAnchoredandReciped) // idk how it affects at optimisation, idk how to do it any other way yet. cannyCat
+                $.Schedule(0.1, SecretOtherUI) // idk how it affects at optimisation, idk how to do it any other way yet. cannyCat
             }
             else
             {
-                $.Msg("Trying!");
-                $.Schedule(1, SecretAnchoredandReciped)
+                $.Msg("Trying in SecretOtherUI!");
+                $.Schedule(1, SecretOtherUI)
             }
         }
 
         SecretUI();
-        SecretAnchoredandReciped();
+        SecretOtherUI();
 
     </script>
 
