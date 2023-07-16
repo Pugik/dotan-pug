@@ -46,6 +46,20 @@
         //
 
         newUI.FindChildTraverse("GuideFlyout").style.height = "834px";
+
+        //
+        //  In Neutral Items Tab (If you dont need it, just delete it)
+        //
+
+        newUI.FindChildTraverse("TeamNeutralItems").style.margin = "0px; 0px; 0px; 0px";
+
+        for (var ff of newUI.FindChildTraverse("TeamNeutralItems").FindChildrenWithClassTraverse("TeamNeutralTokensTitle")) 
+        {
+            ff.style.visibility = "collapse";
+        }
+        
+        newUI.FindChildTraverse("TeamNeutralItems").FindChildTraverse("TeamNeutralTokensList").style.visibility = "collapse";
+        newUI.FindChildTraverse("TeamNeutralItems").FindChildTraverse("ViewAllButton").style.visibility = "collapse";
         
         //
         //
