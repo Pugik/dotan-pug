@@ -1,5 +1,5 @@
 //
-// Items Custom.
+// Items Custom (17.07.23)
 //
 
 //
@@ -17,8 +17,11 @@
 
 	"item_courier"
 	{	
-		"ItemCost"						"69"
+		"ItemCost"						"2000"
 		"ItemPurchasable"				"1"
+		
+		"ItemStockMax"					"0"
+		"ItemStockTime"					"0"
 	}
 
 	"item_tpscroll"

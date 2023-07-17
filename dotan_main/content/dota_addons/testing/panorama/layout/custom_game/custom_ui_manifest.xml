@@ -30,22 +30,6 @@
 
         newUI.FindChildTraverse("GridMainShopContents").FindChildTraverse("GridBasicItemsCategory").FindChildTraverse("GridBasicItems").style.padding = "-3.0px 0.0px 0.0px 0.0px";
         newUI.FindChildTraverse("GridMainShopContents").FindChildTraverse("GridUpgradesCategory").FindChildTraverse("GridUpgradeItems").style.padding = "-3.0px 0.0px 0.0px 0.0px";
-	
-        //
-        // Stash Fix (volve hello?)
-        //
-        // why is the shop lift on the stash?
-        //
-
-        newUI.FindChildTraverse("lower_hud").FindChildTraverse("shop_launcher_block").FindChildTraverse("stash").style.margin = "0.0px 0.0px 46.0px 0.0px";
-
-        //
-        // Improving the item guide panel.
-        //
-        // Just resize item guide panel to recipe panel. (default value = 814px - looks terrible.) 
-        //
-
-        newUI.FindChildTraverse("GuideFlyout").style.height = "834px";
 
         //
         //  In Neutral Items Tab (If you dont need it, just delete it)
@@ -60,6 +44,12 @@
         
         newUI.FindChildTraverse("TeamNeutralItems").FindChildTraverse("TeamNeutralTokensList").style.visibility = "collapse";
         newUI.FindChildTraverse("TeamNeutralItems").FindChildTraverse("ViewAllButton").style.visibility = "collapse";
+
+        //
+        // Disable Radar and Glyph buttons
+        //
+
+        newUI.FindChildTraverse("GlyphScanContainer").style.visibility = "collapse";
         
         //
         //
