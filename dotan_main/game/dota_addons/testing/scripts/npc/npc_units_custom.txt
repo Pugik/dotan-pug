@@ -1,3 +1,5 @@
+#base lua_items/item_banana/unit.txt
+
 "DOTAUnits"
 {	
     "npc_dota_courier"

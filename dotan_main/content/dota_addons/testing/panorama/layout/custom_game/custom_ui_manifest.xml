@@ -13,6 +13,16 @@
 
 		newUI.FindChildTraverse("GridNeutralsTab").style.visibility = "collapse";
 
+        // 
+        // Disable talant tree
+        //
+
+		newUI.FindChildTraverse("StatBranch").style.visibility = "collapse";
+        newUI.FindChildTraverse("StatBranchHotkey").style.visibility = "collapse";
+        newUI.FindChildTraverse("level_stats_frame").style.visibility = "collapse";
+
+        newUI.FindChildTraverse("StatBranchOuter").style.visibility = "collapse";
+
         //
         // Resize remaining shop tabs
         //

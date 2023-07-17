@@ -1,6 +1,6 @@
 item_trident_custom = class({})
 
-LinkLuaModifier( "modifier_item_trident_custom", "lua_items/item_trident_custom/item_trident_custom", LUA_MODIFIER_MOTION_NONE )
+LinkLuaModifier( "modifier_item_trident_custom", "lua_items/item_trident_custom/item_trident_custom.lua", LUA_MODIFIER_MOTION_NONE )
 
 function item_trident_custom:GetIntrinsicModifierName()
     return "modifier_item_trident_custom"

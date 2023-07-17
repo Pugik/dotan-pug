@@ -7,7 +7,8 @@
 //
 
 // Do it this way because its much easier to perceive. (Yes, lots of different folders, but its better that way.)
-#base "lua_items/item_trident_custom/item_trident_custom.txt" // bla bla bla this custom trident.
+#base "lua_items/item_trident_custom/base.txt" // bla bla bla this custom trident.
+#base "lua_items/item_banana/base.txt"
 
 "DOTAAbilities"
 {

@@ -1,0 +1,58 @@
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// item_banana
+	//=================================================================================================================
+	"item_banana"
+	{	
+		"BaseClass"                     "item_lua"
+		"ScriptFile"                    "lua_items/item_banana/item_banana"
+		"AbilityTextureName"			"item_banana"	
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO"
+		"Model"							"models/props_gameplay/banana_prop_closed.vmdl"	
+		
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCooldown"				"5.0"
+		"AbilityCastRange"				"0.0"
+		"AbilityCastPoint"				"0.0"
+		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"200"
+		"ItemShopTags"					"consumable"
+		"ItemQuality"					"consumable"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemAliases"					"banana"
+		"ItemStackable"					"1"
+		"ItemStackableMax"				"3"
+		"ItemInitialCharges"			"1"
+		"ItemPermanent"					"0"
+		"IsTempestDoubleClonable"		"0"
+		"ShouldBeInitiallySuggested"	"1"
+
+		"precache"
+		{
+			"soundfile" "soundevents/game_sounds_items.vsndevts"
+		}
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"peel_duration"		"10"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"health"			"25"
+			}
+		}
+	}
+}

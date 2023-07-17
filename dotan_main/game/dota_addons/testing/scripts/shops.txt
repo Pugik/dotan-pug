@@ -1,5 +1,5 @@
 //
-// Shops List (12.07.23)
+// Shops List (17.07.23)
 //
 
 "dota_shops"
