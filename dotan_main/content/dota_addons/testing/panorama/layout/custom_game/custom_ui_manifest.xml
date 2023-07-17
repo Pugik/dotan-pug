@@ -69,7 +69,7 @@
                 {
                     ff.FindChildTraverse("SecretShop").style.visibility = "collapse";
 
-                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/kalodota2/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
+                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
                 }
 
                 //
@@ -83,7 +83,7 @@
                     //
                     // idk, github must have, because there's something wrong with the vtex or my code.
                     //
-                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/kalodota2/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
+                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
 
 
                     //
@@ -110,7 +110,7 @@
 
                 for (var ff of newUI.FindChildTraverse("ItemCombinesAndBasicItemsContainer").FindChildTraverse("ItemList").FindChildrenWithClassTraverse("SecretShopItem")) 
                 {
-                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/kalodota2/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
+                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
                 }
 
                 //
@@ -119,7 +119,7 @@
 
                 for (var ff of newUI.FindChildTraverse("ItemCombinesAndBasicItemsContainer").FindChildTraverse("ItemsContainer").FindChildrenWithClassTraverse("SecretShopItem")) 
                 {
-                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/kalodota2/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
+                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
                 } 
 
                 //
@@ -128,7 +128,7 @@
 
                 for (var ff of newUI.FindChildTraverse("ItemBuild").FindChildTraverse("Categories").FindChildrenWithClassTraverse("SecretShopItem")) 
                 {
-                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/kalodota2/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
+                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
                 
                     ff.FindChildTraverse("SecretShop").style.visibility = "collapse";
                 }
