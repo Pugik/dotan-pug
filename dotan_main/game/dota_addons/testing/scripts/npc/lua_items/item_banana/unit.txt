@@ -5,7 +5,7 @@
 		// General
 		//----------------------------------------------------------------
 		"BaseClass"				"npc_dota_creep_neutral" //npc_dota_creep_neutral
-        "Model"					"models/props_gameplay/banana_prop_open.vmdl"
+        "Model"					"models/npc_dotan_banana.vmdl"
 		"Level"					"1"
 		"ModelScale" 			"0.8"
 	

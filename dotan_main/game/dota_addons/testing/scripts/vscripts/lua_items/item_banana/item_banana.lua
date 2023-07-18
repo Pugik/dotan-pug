@@ -15,6 +15,7 @@ function item_banana:OnSpellStart()
 
         self.banana_peel = CreateUnitByName("npc_dotan_banana_peel", caster:GetAbsOrigin(), true, caster, caster:GetOwner(), caster:GetTeam())
         self.banana_peel:AddNewModifier(nil, nil, "modifier_kill", {duration = self.peel_duration})
+        self.banana_peel:SetForwardVector(RandomVector(1))
 
 		caster:EmitSound("DOTA_Item.Cheese.Activate")
 	end
