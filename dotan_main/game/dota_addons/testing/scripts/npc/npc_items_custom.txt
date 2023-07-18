@@ -42,6 +42,41 @@
 		"ItemPurchasable"				"0"
 	}
 
+	"item_ultimate_scepter"
+	{
+		"IsObsolete"                    "1"
+		"ItemPurchasable"				"0"
+	}
+
+	"item_aghanims_shard"
+	{
+		"IsObsolete"                    "1"
+		"ItemPurchasable"				"0"
+	}
+
+	"item_recipe_ultimate_scepter_2"
+	{
+		"IsObsolete"                    "1"
+		"ItemRecipe"					"0"
+	}
+
+	"item_ultimate_scepter_2"
+	{
+		"IsObsolete"                    "1"
+		"ItemPurchasable"				"0"
+	}
+	
+	"item_ultimate_scepter_roshan"
+	{
+		"IsObsolete"                    "1"
+		"ItemPurchasable"				"0"
+	}
+
+	"item_aghanims_shard_roshan"
+	{
+		"IsObsolete"                    "1"
+		"ItemPurchasable"				"0"
+	}
 
 	//
 	//
