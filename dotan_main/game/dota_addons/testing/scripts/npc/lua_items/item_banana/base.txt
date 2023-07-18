@@ -48,7 +48,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"peel_duration"		"60"
+				"peel_duration"		"300"
 			}
 			"02"
 			{
