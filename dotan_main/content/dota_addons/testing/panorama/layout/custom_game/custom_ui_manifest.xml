@@ -72,35 +72,21 @@
             if (Parent.FindChildTraverse("GameAndPlayersRoot") != undefined)
             {
                 //
-                // Removing the secret shop icon and changing the icon borders. (First Tab / First Line of Items)
+                // Removing the secret shop icon. (First Tab / First Line of Items)
                 //
 
                 for (var ff of newUI.FindChildTraverse("GridBasicItemsCategory").FindChildTraverse("ShopItemsContainer").FindChildrenWithClassTraverse("SecretShopItem")) 
                 {
                     ff.FindChildTraverse("SecretShop").style.visibility = "collapse";
-
-                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
                 }
 
                 //
-                // Removing the secret shop icon and changing the icon borders. (Second Tab / Second Line of Items)
+                // Removing the secret shop icon. (Second Tab / First Line of Items)
                 //
 
                 for (var ff of newUI.FindChildTraverse("GridUpgradesCategory").FindChildTraverse("ShopItemsContainer").FindChildrenWithClassTraverse("SecretShopItem")) 
                 {
                     ff.FindChildTraverse("SecretShop").style.visibility = "collapse";
-                    
-                    //
-                    // idk, github must have, because there's something wrong with the vtex or my code.
-                    //
-                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
-
-
-                    //
-                    // idk, vtex doesn't want to work, maybe im stupid.
-                    //
-
-                    //ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('s2r://panorama/images/custom_game/hud/shopborder_nosecret_custom.png')";
                 }
             }
             else
@@ -114,6 +100,45 @@
         {
             if (Parent.FindChildTraverse("GameAndPlayersRoot") != undefined)
             {
+
+                //
+                // Changing the icon borders. (First Tab / First Line of Items)
+                //
+
+                for (var ff of newUI.FindChildTraverse("GridBasicItemsCategory").FindChildTraverse("ShopItemsContainer").FindChildrenWithClassTraverse("SecretShopItem")) 
+                {
+                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
+                }
+
+                for (var ff of newUI.FindChildTraverse("GridBasicItemsCategory").FindChildTraverse("ShopItemsContainer").FindChildrenWithClassTraverse("CanPurchase")) 
+                {
+                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('s2r://panorama/images/hud/shopborder_canpurchase_psd.vtex')"
+                }
+
+                //
+                // Changing the icon borders. (Second Tab / First Line of Items)
+                //
+
+                for (var ff of newUI.FindChildTraverse("GridUpgradesCategory").FindChildTraverse("ShopItemsContainer").FindChildrenWithClassTraverse("SecretShopItem")) 
+                {              
+                    //
+                    // idk, github must have, because there's something wrong with the vtex or my code.
+                    //
+                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
+
+
+                    //
+                    // idk, vtex doesn't want to work, maybe im stupid.
+                    //
+
+                    //ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('s2r://panorama/images/custom_game/hud/shopborder_nosecret_custom.png')";
+                }
+
+                for (var ff of newUI.FindChildTraverse("GridUpgradesCategory").FindChildTraverse("ShopItemsContainer").FindChildrenWithClassTraverse("CanPurchase")) 
+                {              
+                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('s2r://panorama/images/hud/shopborder_canpurchase_psd.vtex')"
+                }
+
                 //
                 // Changing the icon borders. (Anchored Items)
                 //
