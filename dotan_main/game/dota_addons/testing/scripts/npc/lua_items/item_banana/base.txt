@@ -6,7 +6,7 @@
 	"item_banana"
 	{	
 		"BaseClass"                     "item_lua"
-		"ScriptFile"                    "lua_items/item_banana/item_banana"
+		"ScriptFile"                    "lua_items/item_banana/item_banana.lua"
 		"AbilityTextureName"			"item_banana"	
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK | DOTA_ABILITY_BEHAVIOR_SUPPRESS_ASSOCIATED_CONSUMABLE"
 		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_FRIENDLY"
@@ -18,11 +18,10 @@
 		"AbilityCooldown"				"5.0"
 		"AbilityCastRange"				"0.0"
 		"AbilityCastPoint"				"0.0"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_YES"
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"200"
+		"ItemCost"						"50"
 		"ItemShopTags"					"consumable"
 		"ItemQuality"					"consumable"
 		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
@@ -33,6 +32,9 @@
 		"ItemPermanent"					"0"
 		"IsTempestDoubleClonable"		"0"
 		"ShouldBeInitiallySuggested"	"1"
+
+		"GlobalShop"					"1"
+		"SecretShop"					"1"
 
 		"precache"
 		{
@@ -46,7 +48,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"peel_duration"		"10"
+				"peel_duration"		"60"
 			}
 			"02"
 			{

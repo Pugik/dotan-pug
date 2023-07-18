@@ -1,9 +1,9 @@
 "DOTAAbilities"
 {
 	//=================================================================================================================
-	// item_banana_logic
+	// ai_banana
 	//=================================================================================================================
-	"item_banana_logic"
+	"ai_banana"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
@@ -11,6 +11,6 @@
 		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
 		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
 		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
-		"ScriptFile"                    "lua_items/item_banana/item_banana_logic.lua"
+		"ScriptFile"                    "lua_items/item_banana/ai_banana.lua"
 	}
 }

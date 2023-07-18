@@ -18,7 +18,7 @@
 
 	"item_courier"
 	{	
-		"ItemCost"						"2000"
+		"ItemCost"						"800"
 		"ItemPurchasable"				"1"
 		
 		"ItemStockMax"					"0"
@@ -102,6 +102,8 @@
 		"ItemCost"						"325"	
 		"ItemPurchasable"				"1"
 		"IsObsolete"					"0"
+
+		"SecretShop"					"1"	
 		
 		"ItemRecipe"					"1"
 		"ItemResult"					"item_iron_talon"
@@ -120,11 +122,13 @@
 		"AbilityCastPoint"				"0.0"
 		"AbilityCooldown"				"25.0"
 
+		"SecretShop"					"1"	
+
 		"Model"							"models/props_gameplay/red_box.vmdl"
 		
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"25"
+		//"AbilityManaCost"				"25"
 		"ItemCost"						"100"
 		"ItemShopTags"					"damage" 
 		"ItemQuality"					"common"
@@ -262,7 +266,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"250"
+		"ItemCost"						"400"
 		"ItemShopTags"					""
 
 		"SecretShop"					"1"	
@@ -342,22 +346,42 @@
 
 	"item_ward_observer"
 	{
+		"ItemCost"						"50"
+		
 		"SecretShop"					"1"
+		
+		"ItemStockMax"					"0"
+		"ItemStockInitial"				"0"
+		"ItemStockTime"					"0.0"
 	}
 
 	"item_ward_sentry"
 	{
+		"ItemCost"						"100"
+		
 		"SecretShop"					"1"
+		
+		"ItemStockMax"					"0"
+		"ItemStockInitial"				"0"
+		"ItemStockTime"					"0.0"
 	}
 
 	"item_dust"
 	{
+		"ItemCost"						"100"
+
 		"SecretShop"					"1"
 	}
 
 	"item_smoke_of_deceit"
 	{
+		"ItemCost"						"80"
+		
 		"SecretShop"					"1"
+		
+		"ItemStockMax"					"0"
+		"ItemStockInitial"				"0"
+		"ItemStockTime"					"0.0"
 	}
 
 		//
@@ -372,11 +396,19 @@
 	"item_tango"
 	{
 		"SecretShop"					"1"
+		
+		"ItemStockMax"					"0"
+		"ItemStockInitial"				"0"
+		"ItemStockTime"					"0.0"
 	}
 
 	"item_flask"
 	{
 		"SecretShop"					"1"
+
+		"ItemStockMax"					"0"
+		"ItemStockInitial"				"0"
+		"ItemStockTime"					"0.0"
 	}
 
 	"item_faerie_fire"
@@ -395,17 +427,31 @@
 
 	"item_enchanted_mango"
 	{
+		"AbilityCooldown"				"5.0"
+		
 		"SecretShop"					"1"
+		
+		"ItemStockMax"					"0"
+		"ItemStockInitial"				"0"
+		"ItemStockTime"					"0.0"
 	}
 
 	"item_clarity"
 	{
 		"SecretShop"					"1"
+
+		"ItemStockMax"					"0"
+		"ItemStockInitial"				"0"
+		"ItemStockTime"					"0.0"
 	}
 
 	"item_infused_raindrop"
 	{
 		"SecretShop"					"1"
+
+		"ItemStockMax"					"0"
+		"ItemStockInitial"				"0"
+		"ItemStockTime"					"0.0"
 	}
 
 		//
@@ -751,16 +797,6 @@
 		"SecretShop"					"1"
 	}
 
-	"item_recipe_iron_talon"
-	{
-		"SecretShop"					"1"	
-	}
-
-	"item_iron_talon"
-	{
-		"SecretShop"					"1"
-	}
-
 	"item_stout_shield"
 	{
 		"SecretShop"					"1"
@@ -900,37 +936,37 @@
 	
 	"item_recipe_dagon_3"
 	{
-		"ItemCost"						"1150"
+		"ItemCost"						"0"
 
 		"SecretShop"					"1"
 
 		"ItemRequirements"
 		{
-			"02"						"item_dagon_2*"
+			"02"						"item_dagon_2*;item_recipe_dagon_2"
 		}
 	}
 
 	"item_recipe_dagon_4"
 	{
-		"ItemCost"						"1150"
+		"ItemCost"						"0"
 
 		"SecretShop"					"1"
 
 		"ItemRequirements"
 		{
-			"02"						"item_dagon_3*"
+			"02"						"item_dagon_3*;item_recipe_dagon_2"
 		}
 	}
 
 	"item_recipe_dagon_5"
 	{
-		"ItemCost"						"1150"
+		"ItemCost"						"0"
 
 		"SecretShop"					"1"
 
 		"ItemRequirements"
 		{
-			"02"						"item_dagon_4*"
+			"02"						"item_dagon_4*;item_recipe_dagon_2"
 		}
 	}
 	
