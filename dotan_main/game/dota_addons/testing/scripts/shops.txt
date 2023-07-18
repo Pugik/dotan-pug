@@ -500,6 +500,7 @@
 	"pregame"
 	{
 		"item"		"item_courier"
+		"item"		"item_banana"
 		"item"		"item_blood_grenade"
 		"item"		"item_gauntlets"
 		"item"		"item_slippers"
