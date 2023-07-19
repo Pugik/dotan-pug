@@ -1172,7 +1172,7 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_all_stats"			"4"
+				"bonus_all_stats"			"3"
 			}
 			"02"
 			{
@@ -1323,7 +1323,7 @@
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"all_stats"			"8"
+				"all_stats"			"6"
 			}
 		}
 	}
