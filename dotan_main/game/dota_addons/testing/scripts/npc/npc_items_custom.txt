@@ -29,6 +29,14 @@
 	{
 		"GlobalShop"					"1"
 		"SecretShop"					"1"
+
+		"ItemInitialCharges"			"1"
+		"ItemPermanent"					"1"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityManaCost"				"50"
+		"AbilityCooldown"				"85.0"
 	}
 
 	"item_recipe_rapier"
@@ -196,8 +204,10 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"900"
+		"ItemCost"						"100"
 		"ItemShopTags"					""
+
+		"SecretShop"					"1"
 
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
@@ -205,13 +215,13 @@
 		"ItemResult"					"item_force_boots"
 		"ItemRequirements"
 		{
-			"01"						"item_boots*;item_force_staff;item_ring_of_health;item_ring_of_health"
+			"01"						"item_boots*;item_force_staff;item_ring_of_health"
 		}
 	}
 
 	"item_recipe_fallen_sky"
 	{
-		"ItemCost"						"1350"	
+		"ItemCost"						"350"	
 		"ItemShopTags"					""
 		"ItemIsNeutralDrop"				"0"
 		"ItemPurchasable"				"1"
@@ -234,7 +244,7 @@
 	{	
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"150"
+		"ItemCost"						"0"
 		"ItemIsNeutralDrop"				"0"
 		"ItemPurchasable"				"1"
 		"ItemSellable"					"0"
@@ -247,7 +257,7 @@
 		"ItemResult"					"item_ironwood_tree"
 		"ItemRequirements"
 		{
-			"01"						"item_branches;item_branches;item_branches"
+			"01"						"item_branches;item_branches;item_branches;item_branches"
 		}
 	}
 
@@ -282,7 +292,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"0"
+		"ItemCost"						"100"
 		"ItemShopTags"					""
 
 		"SecretShop"					"1"	
@@ -293,7 +303,7 @@
 		"ItemResult"					"item_arcane_ring"
 		"ItemRequirements"
 		{
-			"01"						"item_energy_booster*;item_ring_of_protection"
+			"01"						"item_mantle*;item_ring_of_protection"
 		}
 	}
 
@@ -332,7 +342,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"750"
+		"ItemCost"						"200"
 		"ItemShopTags"					""
 
 		"SecretShop"					"1"	
@@ -343,7 +353,7 @@
 		"ItemResult"					"item_giants_ring"
 		"ItemRequirements"
 		{
-			"01"						"item_reaver*;item_reaver;item_wind_lace;item_wind_lace"
+			"01"						"item_reaver*;item_wind_lace;item_wind_lace"
 		}
 	}
 
@@ -362,6 +372,7 @@
 	{
 		"SecretShop"					"1"
 		"ItemIsNeutralDrop"				"1"
+		"ItemKillable"					"1"
 	}
 
 	"item_recipe_travel_boots_2"
@@ -373,6 +384,7 @@
 	{
 		"SecretShop"					"1"
 		"ItemIsNeutralDrop"				"1"
+		"ItemKillable"					"1"
 	}
     
     //
@@ -527,6 +539,7 @@
 	{
 		"SecretShop"					"1"
 		"ItemIsNeutralDrop"				"1"
+		"ItemKillable"					"1"
 	}
 
 	"item_wind_lace"
@@ -557,6 +570,7 @@
 	{
 		"SecretShop"					"1"
 		"ItemIsNeutralDrop"				"1"
+		"ItemKillable"					"1"
 	}
 
 	"item_gloves"
@@ -607,6 +621,7 @@
 	{
 		"SecretShop"					"1"
 		"ItemIsNeutralDrop"				"1"
+		"ItemKillable"					"1"
 	}
 
 	"item_blades_of_attack"
@@ -632,6 +647,33 @@
 	{
 		"SecretShop"					"1"
 		"ItemIsNeutralDrop"				"1"
+		"ItemKillable"					"1"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement"		"45"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_mana"			"250"
+			}			
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"replenish_amount"		"150"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"replenish_radius"		"1200"
+			}
+		}
 	}
 
 	"item_void_stone"
@@ -861,6 +903,7 @@
 	{
 		"SecretShop"					"1"
 		"ItemIsNeutralDrop"				"1"
+		"ItemKillable"					"1"
 	}
 
 	"item_recipe_ancient_janggo"
@@ -1081,30 +1124,90 @@
 		"ItemKillable"					"1"
 
 		"ItemIsNeutralDrop"				"1"
+
+		"ItemKillable"					"1"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_movement_speed"	"100"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"push_length"			"600"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"push_duration"			"0.5"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"hp_regen"			"9"
+			}
+		}
 	}
 
 	"item_ironwood_tree"
 	{
 		"SecretShop"					"1"
 		
-		"ItemCost"						"600"
+		"ItemCost"						"200"
 		"ItemPurchasable"				"1"
 		"ItemSellable"					"1"
 		"ItemKillable"					"1"
 
 		"ItemIsNeutralDrop"				"0"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_all_stats"			"4"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"tree_duration"		"30"
+			}
+		}
 	}
 
 	"item_royal_jelly"
 	{
 		"SecretShop"					"1"
 		
-		"ItemCost"						"600"
+		"ItemCost"						"800"
 		"ItemPurchasable"				"1"
 		"ItemSellable"					"1"
 		"ItemKillable"					"1"
 
 		"ItemIsNeutralDrop"				"0"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"health_regen"			"3.5"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"mana_regen"			"2.5"
+			}
+		}
 	}
 
 	"item_ring_of_aquila"
@@ -1135,24 +1238,51 @@
 	{
 		"SecretShop"					"1"
 		
-		"ItemCost"						"600"
+		"ItemCost"						"500"
 		"ItemPurchasable"				"1"
 		"ItemSellable"					"1"
 		"ItemKillable"					"1"
 
 		"ItemIsNeutralDrop"				"0"
+
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+			
+		"AbilityCooldown"				"30.0"
+		"AbilityCastRange"				"300"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"bonus_health"				"50"
+			"bonus_health_regen"		"5"
+			"aura_health_regen"			"10"
+			"radius"					"500"
+			"duration"					"20"
+		}
 	}
 
 	"item_trusty_shovel"
 	{
 		"SecretShop"					"1"
 		
-		"ItemCost"						"600"
+		"ItemCost"						"500"
 		"ItemPurchasable"				"1"
 		"ItemSellable"					"1"
 		"ItemKillable"					"1"
 
 		"ItemIsNeutralDrop"				"0"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"bonus_health"			"100"
+			"chance_bounty_rune"	"16"
+			"chance_other_item"		"28"
+			"kobold_duration"		"60"
+		}
 	}
 
 	"item_fallen_sky"
@@ -1170,13 +1300,32 @@
 	"item_unstable_wand" // pig pole
 	{
 		"SecretShop"					"1"
+
+		"AbilityCooldown"				"20.0"
+		"AbilityManaCost"				"25"
 		
-		"ItemCost"						"600"
+		"ItemCost"						"400"
 		"ItemPurchasable"				"1"
 		"ItemSellable"					"1"
 		"ItemKillable"					"1"
 
 		"ItemIsNeutralDrop"				"0"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"duration"		"4"
+			}	
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"all_stats"			"8"
+			}
+		}
 	}
 
 	"item_giants_ring"
@@ -1189,6 +1338,37 @@
 		"ItemKillable"					"1"
 
 		"ItemIsNeutralDrop"				"0"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_strength"			"25"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"movement_speed"			"40"
+			}		
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"model_scale"			"50"
+			}	
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"pct_str_damage_per_second"			"100"
+			}	
+			"05"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"damage_radius"			"100"
+			}		
+		}
 	}
 
 	"item_arcane_ring"
@@ -1201,6 +1381,16 @@
 		"ItemKillable"					"1"
 
 		"ItemIsNeutralDrop"				"0"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"bonus_intelligence"	"6"
+			"bonus_armor"			"2"
+			"mana_restore"			"50"
+			"radius"				"600"
+		}
 	}
 
 	//

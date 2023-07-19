@@ -453,7 +453,6 @@
 
 	"magics"
 	{
-		"item"		"item_tpscroll"
 		"item"		"item_banana"
 	}
 

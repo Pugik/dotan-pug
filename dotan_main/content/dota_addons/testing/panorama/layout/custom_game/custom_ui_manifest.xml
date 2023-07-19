@@ -66,125 +66,169 @@
         //  Most of the code where im trying to change normal shop panorama associated with the secretshop.
         //
         //
-
         function SecretUI()
 		{
-            if (Parent.FindChildTraverse("GameAndPlayersRoot") != undefined)
+            //
+            // Removing the secret shop icon. (First Tab / First Line of Items)
+            //
+
+            for (var ff of newUI.FindChildTraverse("GridBasicItemsCategory").FindChildTraverse("ShopItemsContainer").FindChildrenWithClassTraverse("SecretShopItem")) 
             {
-                //
-                // Removing the secret shop icon. (First Tab / First Line of Items)
-                //
-
-                for (var ff of newUI.FindChildTraverse("GridBasicItemsCategory").FindChildTraverse("ShopItemsContainer").FindChildrenWithClassTraverse("SecretShopItem")) 
-                {
-                    ff.FindChildTraverse("SecretShop").style.visibility = "collapse";
-                }
-
-                //
-                // Removing the secret shop icon. (Second Tab / First Line of Items)
-                //
-
-                for (var ff of newUI.FindChildTraverse("GridUpgradesCategory").FindChildTraverse("ShopItemsContainer").FindChildrenWithClassTraverse("SecretShopItem")) 
-                {
-                    ff.FindChildTraverse("SecretShop").style.visibility = "collapse";
-                }
+                ff.FindChildTraverse("SecretShop").style.visibility = "collapse";
             }
-            else
+
+            //
+            // Removing the secret shop icon. (Second Tab / First Line of Items)
+            //
+
+            for (var ff of newUI.FindChildTraverse("GridUpgradesCategory").FindChildTraverse("ShopItemsContainer").FindChildrenWithClassTraverse("SecretShopItem")) 
             {
-                $.Msg("Trying in SecretUI!");
-                $.Schedule(1, SecretUI)
+                ff.FindChildTraverse("SecretShop").style.visibility = "collapse";
             }
         }
 
         function OtherUI()
         {
-            if (Parent.FindChildTraverse("GameAndPlayersRoot") != undefined)
+            //
+            // Changing the icon borders. (First Tab / First Line of Items)
+            //
+
+            for (var ff of newUI.FindChildTraverse("GridBasicItemsCategory").FindChildTraverse("ShopItemsContainer").FindChildrenWithClassTraverse("SecretShopItem")) 
             {
+                ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
+            }
+
+            for (var ff of newUI.FindChildTraverse("GridBasicItemsCategory").FindChildTraverse("ShopItemsContainer").FindChildrenWithClassTraverse("CanPurchase")) 
+            {
+                ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('s2r://panorama/images/hud/shopborder_canpurchase_psd.vtex')"
+            }
+
+            //
+            // Changing the icon borders. (Second Tab / First Line of Items)
+            //
+
+            for (var ff of newUI.FindChildTraverse("GridUpgradesCategory").FindChildTraverse("ShopItemsContainer").FindChildrenWithClassTraverse("SecretShopItem")) 
+            {              
+                //
+                // idk, github must have, because there's something wrong with the vtex or my code.
+                //
+                ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
+
 
                 //
-                // Changing the icon borders. (First Tab / First Line of Items)
+                // idk, vtex doesn't want to work, maybe im stupid.
                 //
 
-                for (var ff of newUI.FindChildTraverse("GridBasicItemsCategory").FindChildTraverse("ShopItemsContainer").FindChildrenWithClassTraverse("SecretShopItem")) 
+                //ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('s2r://panorama/images/custom_game/hud/shopborder_nosecret_custom.png')";
+            }
+
+            for (var ff of newUI.FindChildTraverse("GridUpgradesCategory").FindChildTraverse("ShopItemsContainer").FindChildrenWithClassTraverse("CanPurchase")) 
+            {              
+                ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('s2r://panorama/images/hud/shopborder_canpurchase_psd.vtex')"
+            }
+
+            //
+            // Changing the icon borders. (Anchored Items)
+            //
+
+            for (var ff of newUI.FindChildTraverse("ItemCombinesAndBasicItemsContainer").FindChildTraverse("ItemList").FindChildrenWithClassTraverse("SecretShopItem")) 
+            {
+                ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
+            }
+
+            for (var ff of newUI.FindChildTraverse("ItemCombinesAndBasicItemsContainer").FindChildTraverse("ItemList").FindChildrenWithClassTraverse("CanPurchase")) 
+            {
+                ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('s2r://panorama/images/hud/shopborder_canpurchase_psd.vtex')"
+            }
+
+            //
+            // Changing the icon borders. (Reciped Items)
+            //
+
+            for (var ff of newUI.FindChildTraverse("ItemCombinesAndBasicItemsContainer").FindChildTraverse("ItemsContainer").FindChildrenWithClassTraverse("SecretShopItem")) 
+            {
+                ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
+            }
+
+            for (var ff of newUI.FindChildTraverse("ItemCombinesAndBasicItemsContainer").FindChildTraverse("ItemsContainer").FindChildrenWithClassTraverse("CanPurchase")) 
+            {
+                ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('s2r://panorama/images/hud/shopborder_canpurchase_psd.vtex')"
+            }
+
+            //
+            // Changing the icon borders. (Quickbuy Items)
+            //
+
+            for (var ff of newUI.FindChildTraverse("QuickBuyRows").FindChildTraverse("Row0").FindChildrenWithClassTraverse("QuickBuySlot")) 
+            {
+                for (var ff of ff.FindChildrenWithClassTraverse("SecretShopItem"))
                 {
                     ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
                 }
+            }
 
-                for (var ff of newUI.FindChildTraverse("GridBasicItemsCategory").FindChildTraverse("ShopItemsContainer").FindChildrenWithClassTraverse("CanPurchase")) 
+            for (var ff of newUI.FindChildTraverse("QuickBuyRows").FindChildTraverse("Row0").FindChildrenWithClassTraverse("QuickBuySlot")) 
+            {
+                for (var ff of ff.FindChildrenWithClassTraverse("CanPurchase"))
                 {
                     ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('s2r://panorama/images/hud/shopborder_canpurchase_psd.vtex')"
                 }
+            }
 
-                //
-                // Changing the icon borders. (Second Tab / First Line of Items)
-                //
-
-                for (var ff of newUI.FindChildTraverse("GridUpgradesCategory").FindChildTraverse("ShopItemsContainer").FindChildrenWithClassTraverse("SecretShopItem")) 
-                {              
-                    //
-                    // idk, github must have, because there's something wrong with the vtex or my code.
-                    //
+            for (var ff of newUI.FindChildTraverse("QuickBuyRows").FindChildTraverse("Row1").FindChildrenWithClassTraverse("QuickBuySlot")) 
+            {
+                for (var ff of ff.FindChildrenWithClassTraverse("SecretShopItem"))
+                {
                     ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
-
-
-                    //
-                    // idk, vtex doesn't want to work, maybe im stupid.
-                    //
-
-                    //ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('s2r://panorama/images/custom_game/hud/shopborder_nosecret_custom.png')";
                 }
+            }
 
-                for (var ff of newUI.FindChildTraverse("GridUpgradesCategory").FindChildTraverse("ShopItemsContainer").FindChildrenWithClassTraverse("CanPurchase")) 
-                {              
+            for (var ff of newUI.FindChildTraverse("QuickBuyRows").FindChildTraverse("Row1").FindChildrenWithClassTraverse("QuickBuySlot")) 
+            {
+                for (var ff of ff.FindChildrenWithClassTraverse("CanPurchase"))
+                {
                     ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('s2r://panorama/images/hud/shopborder_canpurchase_psd.vtex')"
                 }
-
-                //
-                // Changing the icon borders. (Anchored Items)
-                //
-
-                for (var ff of newUI.FindChildTraverse("ItemCombinesAndBasicItemsContainer").FindChildTraverse("ItemList").FindChildrenWithClassTraverse("SecretShopItem")) 
-                {
-                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
-                }
-
-                //
-                // Changing the icon borders. (Reciped Items)
-                //
-
-                for (var ff of newUI.FindChildTraverse("ItemCombinesAndBasicItemsContainer").FindChildTraverse("ItemsContainer").FindChildrenWithClassTraverse("SecretShopItem")) 
-                {
-                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
-                } 
-
-                //
-                // Removing the secret shop icon and changing the icon borders. (Guide Items)
-                //
-
-                for (var ff of newUI.FindChildTraverse("ItemBuild").FindChildTraverse("Categories").FindChildrenWithClassTraverse("SecretShopItem")) 
-                {
-                    ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
-                
-                    ff.FindChildTraverse("SecretShop").style.visibility = "collapse";
-                }
-
-                //
-                // We need a constant loop or check (which idk how to write lul), because this panel is updated by player actions.
-                //
-                // TODO: try to do check, because "loop" sounds like bullshit.
-                //
-
-                $.Schedule(0.1, OtherUI) // idk how it affects at optimisation, idk how to do it any other way yet. cannyCat
             }
-            else
+
+            //
+            // Removing the secret shop icon and changing the icon borders. (Guide Items)
+            //
+
+            for (var ff of newUI.FindChildTraverse("ItemBuild").FindChildTraverse("Categories").FindChildrenWithClassTraverse("SecretShopItem")) 
             {
-                $.Msg("Trying in OtherUI!");
-                $.Schedule(1, OtherUI)
+                ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('https://github.com/Pugik/dotan-pug/blob/main/dotan_icons/shopborder_custom_secret.png?raw=true')"
+            
+                ff.FindChildTraverse("SecretShop").style.visibility = "collapse";
             }
+
+            for (var ff of newUI.FindChildTraverse("ItemBuild").FindChildTraverse("Categories").FindChildrenWithClassTraverse("CanPurchase")) 
+            {
+                ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('s2r://panorama/images/hud/shopborder_canpurchase_psd.vtex')"
+            
+                ff.FindChildTraverse("SecretShop").style.visibility = "collapse";
+            }
+
+            //
+            // We need a constant loop or check (which idk how to write lul), because this panel is updated by player actions.
+            //
+            // TODO: try to do check, because "loop" sounds like bullshit.
+            //
+
+            $.Schedule(0.1, OtherUI) // idk how it affects at optimisation, idk how to do it any other way yet. cannyCat
         }
 
-        SecretUI();
-        OtherUI();
+        if (Parent.FindChildTraverse("GameAndPlayersRoot") != undefined)
+        {
+            SecretUI();
+            OtherUI();
+        }
+        else
+        {
+            $.Msg("Trying in SecretUI and OtherUI!");
+            $.Schedule(1, OtherUI)
+            $.Schedule(1, SecretUI)
+        }
 
     </script>
 
