@@ -26,34 +26,70 @@ function modifier_streak_count:OnRefresh()
 	self:OnCreated()
 end
 
-function modifier_streak_count:OnStackCountChanged(oldstacks)
+function modifier_streak_count:OnStackCountChanged(stack_before_changed)
     if not IsServer() then return end
 
     local hero = self:GetParent()
     
+    if self:GetStackCount() == 1 then
+        self.particle1 = ParticleManager:CreateParticle("particles/econ/events/fall_2022/agh/agh_aura_fall2022_ash.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
+        ParticleManager:SetParticleControl(self.particle1, 0, hero:GetAbsOrigin())
+    end
+
+    if self:GetStackCount() == 2 then
+        self.particle2 = ParticleManager:CreateParticle("particles/econ/events/fall_2022/agh/agh_aura_fall2022_border.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
+        ParticleManager:SetParticleControl(self.particle2, 0, hero:GetAbsOrigin())
+    end
+
+    if self:GetStackCount() == 3 then
+        self.particle3 = ParticleManager:CreateParticle("particles/econ/events/fall_2022/agh/agh_aura_fall2022_smoke.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
+        ParticleManager:SetParticleControl(self.particle3, 0, hero:GetAbsOrigin())
+    end
+
+    if self:GetStackCount() == 4 then
+        self.particle4 = ParticleManager:CreateParticle("particles/econ/events/fall_2022/agh/agh_aura_fall2022_flek.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
+        ParticleManager:SetParticleControl(self.particle4, 0, hero:GetAbsOrigin())
+    end
+
     if self:GetStackCount() == 5 then
-        self.particle = ParticleManager:CreateParticle("particles/econ/events/fall_2022/agh/agh_aura_fall2022_flek.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
-        ParticleManager:SetParticleControl(self.particle, 0, hero:GetAbsOrigin())
+        self.particle5 = ParticleManager:CreateParticle("particles/econ/events/fall_2022/agh/agh_aura_fall2022_parent.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
+        ParticleManager:SetParticleControl(self.particle5, 0, hero:GetAbsOrigin())
     end
 
-    if self:GetStackCount() == 10 then
-        self:ClearEffects()
-        self.particle = ParticleManager:CreateParticle("particles/econ/events/fall_2022/agh/agh_aura_fall2022_lvl1.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
-        ParticleManager:SetParticleControl(self.particle, 0, hero:GetAbsOrigin())
+    if self:GetStackCount() == 6 then
+        self.particle6 = ParticleManager:CreateParticle("particles/econ/events/fall_2022/agh/agh_aura_fall2022_crystal.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
+        ParticleManager:SetParticleControl(self.particle6, 0, hero:GetAbsOrigin())
     end
 
-    if self:GetStackCount() >= 15 then
-        self:ClearEffects()
-        self.particle = ParticleManager:CreateParticle("particles/econ/events/fall_2022/agh/agh_aura_fall2022_lvl2.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
-        ParticleManager:SetParticleControl(self.particle, 0, hero:GetAbsOrigin())
-    end
+    if stack_before_changed >= 1 and self:GetStackCount() == 0 then
+        if self.particle1 ~= nil then 
+            ParticleManager:DestroyParticle(self.particle1, true)
+            ParticleManager:ReleaseParticleIndex(self.particle1)
+        end
 
-    if oldstacks >= 5 and self:GetStackCount() == 0 then
-        self:ClearEffects()
-    end
-end
+        if self.particle2 ~= nil then 
+            ParticleManager:DestroyParticle(self.particle2, true)
+            ParticleManager:ReleaseParticleIndex(self.particle2)
+        end
 
-function modifier_streak_count:ClearEffects()
-    ParticleManager:DestroyParticle(self.particle, true)
-    ParticleManager:ReleaseParticleIndex(self.particle)
+        if self.particle3 ~= nil then 
+            ParticleManager:DestroyParticle(self.particle3, true)
+            ParticleManager:ReleaseParticleIndex(self.particle3)
+        end
+
+        if self.particle4 ~= nil then 
+            ParticleManager:DestroyParticle(self.particle4, true)
+            ParticleManager:ReleaseParticleIndex(self.particle4)
+        end
+
+        if self.particle5 ~= nil then 
+            ParticleManager:DestroyParticle(self.particle5, true)
+            ParticleManager:ReleaseParticleIndex(self.particle5)
+        end
+
+        if self.particle6 ~= nil then 
+            ParticleManager:DestroyParticle(self.particle6, true)
+            ParticleManager:ReleaseParticleIndex(self.particle6)
+        end
+    end
 end
