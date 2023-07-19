@@ -35,8 +35,8 @@
 
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"50"
-		"AbilityCooldown"				"85.0"
+		"AbilityManaCost"				"25"
+		"AbilityCooldown"				"60.0"
 	}
 
 	"item_recipe_rapier"
