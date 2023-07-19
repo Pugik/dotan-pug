@@ -66,8 +66,9 @@
         //  Most of the code where im trying to change normal shop panorama associated with the secretshop.
         //
         //
-        function SecretUI()
-		{
+
+        function MainUIwithLoop()
+        {
             //
             // Removing the secret shop icon. (First Tab / First Line of Items)
             //
@@ -85,10 +86,7 @@
             {
                 ff.FindChildTraverse("SecretShop").style.visibility = "collapse";
             }
-        }
 
-        function OtherUI()
-        {
             //
             // Changing the icon borders. (First Tab / First Line of Items)
             //
@@ -215,19 +213,17 @@
             // TODO: try to do check, because "loop" sounds like bullshit.
             //
 
-            $.Schedule(0.1, OtherUI) // idk how it affects at optimisation, idk how to do it any other way yet. cannyCat
+            $.Schedule(0.1, MainUIwithLoop) // idk how it affects at optimisation, idk how to do it any other way yet. cannyCat
         }
 
         if (Parent.FindChildTraverse("GameAndPlayersRoot") != undefined)
         {
-            SecretUI();
-            OtherUI();
+            MainUIwithLoop();
         }
         else
         {
-            $.Msg("Trying in SecretUI and OtherUI!");
-            $.Schedule(1, OtherUI)
-            $.Schedule(1, SecretUI)
+            $.Msg("Trying in MainUIwithLoop!");
+            $.Schedule(1, MainUIwithLoop)
         }
 
     </script>
