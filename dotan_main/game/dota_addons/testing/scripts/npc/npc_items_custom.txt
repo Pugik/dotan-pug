@@ -30,7 +30,7 @@
 		"GlobalShop"					"1"
 		"SecretShop"					"1"
 
-		"ItemInitialCharges"			"1"
+		"ItemInitialCharges"			"0"
 		"ItemPermanent"					"1"
 
 		// Stats
@@ -372,7 +372,6 @@
 	{
 		"SecretShop"					"1"
 		"ItemIsNeutralDrop"				"1"
-		"ItemKillable"					"1"
 	}
 
 	"item_recipe_travel_boots_2"
@@ -384,7 +383,6 @@
 	{
 		"SecretShop"					"1"
 		"ItemIsNeutralDrop"				"1"
-		"ItemKillable"					"1"
 	}
     
     //
@@ -539,7 +537,6 @@
 	{
 		"SecretShop"					"1"
 		"ItemIsNeutralDrop"				"1"
-		"ItemKillable"					"1"
 	}
 
 	"item_wind_lace"
@@ -570,7 +567,6 @@
 	{
 		"SecretShop"					"1"
 		"ItemIsNeutralDrop"				"1"
-		"ItemKillable"					"1"
 	}
 
 	"item_gloves"
@@ -621,7 +617,6 @@
 	{
 		"SecretShop"					"1"
 		"ItemIsNeutralDrop"				"1"
-		"ItemKillable"					"1"
 	}
 
 	"item_blades_of_attack"
@@ -647,7 +642,6 @@
 	{
 		"SecretShop"					"1"
 		"ItemIsNeutralDrop"				"1"
-		"ItemKillable"					"1"
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -903,7 +897,6 @@
 	{
 		"SecretShop"					"1"
 		"ItemIsNeutralDrop"				"1"
-		"ItemKillable"					"1"
 	}
 
 	"item_recipe_ancient_janggo"
@@ -1121,11 +1114,10 @@
 		"ItemCost"						"600"
 		"ItemPurchasable"				"1"
 		"ItemSellable"					"1"
-		"ItemKillable"					"1"
 
 		"ItemIsNeutralDrop"				"1"
 
-		"ItemKillable"					"1"
+		"AbilityCastRange"				"600"
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
