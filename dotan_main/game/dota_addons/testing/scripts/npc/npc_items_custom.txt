@@ -18,7 +18,7 @@
 
 	"item_courier"
 	{	
-		"ItemCost"						"800"
+		"ItemCost"						"300"
 		"ItemPurchasable"				"1"
 		
 		"ItemStockMax"					"0"
@@ -317,7 +317,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------
-		"ItemCost"						"400"
+		"ItemCost"						"0"
 		"ItemShopTags"					""
 
 		"SecretShop"					"1"	
@@ -328,7 +328,7 @@
 		"ItemResult"					"item_philosophers_stone"
 		"ItemRequirements"
 		{
-			"01"						"item_courier*;item_energy_booster"
+			"01"						"item_hand_of_midas*;item_energy_booster"
 		}
 	}
 
@@ -1218,12 +1218,33 @@
 	{
 		"SecretShop"					"1"
 		
-		"ItemCost"						"600"
+		"ItemCost"						"3000"
 		"ItemPurchasable"				"1"
 		"ItemSellable"					"1"
 		"ItemKillable"					"1"
 
 		"ItemIsNeutralDrop"				"0"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_gpm"			"150"
+			}
+			"02"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_mana"		"200"
+			}
+			"03"
+			{
+				"var_type"			"FIELD_INTEGER"
+				"bonus_damage"		"-30"
+			}
+		}
 	}
 
 	"item_seeds_of_serenity"
