@@ -1225,6 +1225,8 @@
 
 		"ItemIsNeutralDrop"				"0"
 
+		"ItemDisassembleRule"			"DOTA_ITEM_DISASSEMBLE_NEVER"
+
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
 		"AbilitySpecial"
