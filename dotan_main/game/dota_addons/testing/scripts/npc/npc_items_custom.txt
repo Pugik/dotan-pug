@@ -1,5 +1,5 @@
 //
-// Items Custom (17.07.23)
+// Items Custom (23.07.23)
 //
 
 //
@@ -148,7 +148,7 @@
 	//=================================================================================================================
 	"item_recipe_iron_talon"
 	{
-		"ItemCost"						"325"	
+		"ItemCost"						"150"	
 		"ItemPurchasable"				"1"
 		"IsObsolete"					"0"
 
@@ -186,6 +186,42 @@
 		"ItemIsNeutralDrop"				"0"
 		"DisplayOverheadAlertOnReceived" "0"
 		"ItemSellable"					"1"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_attack_speed"			"7"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"quelling_range_tooltip"			"350"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"cast_range_ward"			"450"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"creep_damage_pct"			"40"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"bonus_armor"	"2"
+			}
+			"06"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"alternative_cooldown"	"4"
+			}
+		}
 	}
 
 	//
@@ -219,9 +255,17 @@
 		}
 	}
 
-	"item_recipe_fallen_sky"
+	"item_recipe_spider_legs"
 	{
-		"ItemCost"						"350"	
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"						"item_datadriven"
+        "Model"							"models/props_gameplay/recipe.vmdl"
+        "AbilityTextureName"            "item_recipe"
+
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------		
+		"ItemCost"						"1650"	
 		"ItemShopTags"					""
 		"ItemIsNeutralDrop"				"0"
 		"ItemPurchasable"				"1"
@@ -233,10 +277,10 @@
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemRecipe"					"1"
-		"ItemResult"					"item_fallen_sky"
+		"ItemResult"					"item_spider_legs"
 		"ItemRequirements"
 		{
-			"01"						"item_blink*;item_meteor_hammer;"
+			"01"						"item_boots*"
 		}
 	}
 
@@ -353,7 +397,7 @@
 		"ItemResult"					"item_giants_ring"
 		"ItemRequirements"
 		{
-			"01"						"item_reaver*;item_wind_lace;item_wind_lace"
+			"01"						"item_reaver*;item_reaver;item_wind_lace"
 		}
 	}
 
@@ -397,7 +441,7 @@
 
 	"item_ward_observer"
 	{
-		"ItemCost"						"50"
+		"ItemCost"						"75"
 		
 		"SecretShop"					"1"
 		
@@ -408,7 +452,7 @@
 
 	"item_ward_sentry"
 	{
-		"ItemCost"						"100"
+		"ItemCost"						"75"
 		
 		"SecretShop"					"1"
 		
@@ -426,7 +470,7 @@
 
 	"item_smoke_of_deceit"
 	{
-		"ItemCost"						"80"
+		"ItemCost"						"125"
 		
 		"SecretShop"					"1"
 		
@@ -1178,7 +1222,7 @@
 	{
 		"SecretShop"					"1"
 		
-		"ItemCost"						"800"
+		"ItemCost"						"650"
 		"ItemPurchasable"				"1"
 		"ItemSellable"					"1"
 		"ItemKillable"					"1"
@@ -1300,7 +1344,7 @@
 		}
 	}
 
-	"item_fallen_sky"
+	"item_spider_legs"
 	{
 		"SecretShop"					"1"
 		
@@ -1309,7 +1353,19 @@
 		"ItemSellable"					"1"
 		"ItemKillable"					"1"
 
-		"ItemIsNeutralDrop"				"0"
+		"ItemIsNeutralDrop"				"1"
+
+		"AbilityCooldown"				"22.0"
+		
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"bonus_movement_speed"	"20"
+			"turn_rate"	"25"
+			"bonus_movement_speed_active"	"15"
+			"duration"			"2"
+		}
 	}
 
 	"item_unstable_wand" // pig pole
@@ -1361,12 +1417,12 @@
 			"01"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"bonus_strength"			"25"
+				"bonus_strength"			"50"
 			}
 			"02"
 			{
 				"var_type"				"FIELD_INTEGER"
-				"movement_speed"			"40"
+				"movement_speed"			"20"
 			}		
 			"03"
 			{

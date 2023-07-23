@@ -4,6 +4,136 @@
 {	
     "npc_dota_courier"
 	{
-        "Ability6"					"generic_hidden" // выключаем способность у курьера, которая дает ему щит.
+        "Ability6"					"generic_hidden"
+    }
+
+    "npc_dota_goodguys_tower1_top"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"6"
+    }
+
+    "npc_dota_goodguys_tower1_mid"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"6"
+    }
+
+    "npc_dota_goodguys_tower1_bot"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"6"
+    }
+
+    "npc_dota_goodguys_tower2_top"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"8"
+    }
+
+    "npc_dota_goodguys_tower2_mid"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"8"
+    }
+
+    "npc_dota_goodguys_tower2_bot"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"8"
+    }
+
+    "npc_dota_goodguys_tower3_top"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"10"
+    }
+
+    "npc_dota_goodguys_tower3_mid"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"10"
+    }
+
+    "npc_dota_goodguys_tower3_bot"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"10"
+    }
+
+    "npc_dota_goodguys_tower4"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"12"
+    }
+
+	"npc_dota_goodguys_fort"
+	{
+        "ArmorPhysical"				"16"
+    }
+
+    "npc_dota_badguys_tower1_top"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"6"
+    }
+
+    "npc_dota_badguys_tower1_mid"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"6"
+    }
+
+    "npc_dota_badguys_tower1_bot"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"6"
+    }
+
+    "npc_dota_badguys_tower2_top"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"8"
+    }
+
+    "npc_dota_badguys_tower2_mid"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"8"
+    }
+
+    "npc_dota_badguys_tower2_bot"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"8"
+    }
+
+    "npc_dota_badguys_tower3_top"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"10"
+    }
+
+    "npc_dota_badguys_tower3_mid"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"10"
+    }
+
+    "npc_dota_badguys_tower3_bot"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"10"
+    }
+
+    "npc_dota_badguys_tower4"
+	{
+        "ModelScale"				"1.5"
+        "ArmorPhysical"				"12"
+    }
+
+	"npc_dota_badguys_fort"
+	{
+        "ArmorPhysical"				"16"
     }
 }

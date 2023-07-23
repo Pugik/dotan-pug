@@ -53,7 +53,7 @@
 		//	Modifiers
 		//-------------------------------------------------------------------	
 
-		"DOTA_Tooltip_modifier_streak_count"	"Severity Of Sins"
-		"DOTA_Tooltip_modifier_streak_count_Description"	"<h1>Curse: Severity Of Sins</h1> <br></br>When you die, a number of items will fall out of you in random order.<br></br> <br></br> If your kill streak is: <br></br>5 (1 item), 10 (2 items), 15 (3 items), 20 (4 items)"
+		"DOTA_Tooltip_modifier_streak_count"	"Severity of Sins"
+		"DOTA_Tooltip_modifier_streak_count_Description"	"<font color='#F1550A'><h1>Curse</h1></font><br>If hero dies by the hands of enemy team, he will lose the number of items from the inventory equal to the level of the curse.<br>The items to be dropped are selected in random order.<br><br>+ <font color='#F0F0F0'><b>1</b></font> level for every 3 heroes killed.<br>Maximum curse level: <font color='#F0F0F0'><b>6</b></font><br><br><font color='#757575'><i>You will find atonement for your sins only by the hands of your enemy.</i></font>"
 	}
 }

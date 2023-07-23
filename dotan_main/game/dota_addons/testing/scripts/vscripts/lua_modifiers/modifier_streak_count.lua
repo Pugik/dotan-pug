@@ -31,32 +31,32 @@ function modifier_streak_count:OnStackCountChanged()
 
     local hero = self:GetParent()
     
-    if self:GetStackCount() == 1 and self.particle1 == nil then
+    if self:GetStackCount() == 1 then
         self.particle1 = ParticleManager:CreateParticle("particles/econ/events/fall_2022/agh/agh_aura_fall2022_ash.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
         ParticleManager:SetParticleControl(self.particle1, 0, hero:GetAbsOrigin())
     end
 
-    if self:GetStackCount() == 2 and self.particle2 == nil then
+    if self:GetStackCount() == 2 then
         self.particle2 = ParticleManager:CreateParticle("particles/econ/events/fall_2022/agh/agh_aura_fall2022_border.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
         ParticleManager:SetParticleControl(self.particle2, 0, hero:GetAbsOrigin())
     end
 
-    if self:GetStackCount() == 3 and self.particle3 == nil then
+    if self:GetStackCount() == 3 then
         self.particle3 = ParticleManager:CreateParticle("particles/econ/events/fall_2022/agh/agh_aura_fall2022_smoke.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
         ParticleManager:SetParticleControl(self.particle3, 0, hero:GetAbsOrigin())
     end
 
-    if self:GetStackCount() == 4 and self.particle4 == nil then
+    if self:GetStackCount() == 4 then
         self.particle4 = ParticleManager:CreateParticle("particles/econ/events/fall_2022/agh/agh_aura_fall2022_flek.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
         ParticleManager:SetParticleControl(self.particle4, 0, hero:GetAbsOrigin())
     end
 
-    if self:GetStackCount() == 5 and self.particle5 == nil then
+    if self:GetStackCount() == 5 then
         self.particle5 = ParticleManager:CreateParticle("particles/econ/events/fall_2022/agh/agh_aura_fall2022_parent.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
         ParticleManager:SetParticleControl(self.particle5, 0, hero:GetAbsOrigin())
     end
 
-    if self:GetStackCount() == 6 and self.particle6 == nil then
+    if self:GetStackCount() == 6 then
         self.particle6 = ParticleManager:CreateParticle("particles/econ/events/fall_2022/agh/agh_aura_fall2022_crystal.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
         ParticleManager:SetParticleControl(self.particle6, 0, hero:GetAbsOrigin())
     end

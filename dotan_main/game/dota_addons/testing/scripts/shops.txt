@@ -368,7 +368,7 @@
 		// 4
 		//		
 		
-		"item"		"item_fallen_sky"
+		"item"		"item_spider_legs"
 		"item"		"item_ironwood_tree"
 		"item"		"item_ring_of_aquila"
 		"item"		"item_dagon_3"
