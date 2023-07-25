@@ -10,5 +10,5 @@ function modifier_units_scale:DeclareFunctions()
 end
 
 function modifier_units_scale:GetModifierModelScale()
-	return 30
+	return 27
 end
