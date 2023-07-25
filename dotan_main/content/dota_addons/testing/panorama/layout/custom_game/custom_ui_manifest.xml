@@ -225,6 +225,46 @@
             $.Msg("Trying in MainUIwithLoop!");
             $.Schedule(1, MainUIwithLoop)
         }
+ 
+        function TalantUI()
+		{
+            // 
+            // Disable talant tree in scoreboard
+            //
+            if (newUI.FindChildTraverse("RadiantTeamContainer").FindChildTraverse("RadiantPlayer0") != null)
+            {
+                for (let i = 0; i < 5; i++) 
+                {
+                    newUI.FindChildTraverse("RadiantTeamContainer").FindChildTraverse("RadiantPlayer"+i).FindChildTraverse("TalentTree").style.visibility = "collapse";
+                    newUI.FindChildTraverse("DireTeamContainer").FindChildTraverse("DirePlayer"+i).FindChildTraverse("TalentTree").style.visibility = "collapse";
+                }
+
+                for (var ff of newUI.FindChildTraverse("RadiantHeader").FindChildrenWithClassTraverse("TalentColumn")) 
+                {
+                    ff.style.visibility = "collapse";
+                }
+
+                for (var ff of newUI.FindChildTraverse("DireHeader").FindChildrenWithClassTraverse("TalentColumn")) 
+                {
+                    ff.style.visibility = "collapse";
+                }
+            }
+            else
+            {
+                //$.Msg("Trying in TalantUI");
+                $.Schedule(1, TalantUI)
+            }
+        }
+
+        if (Parent.FindChildTraverse("GameAndPlayersRoot") != undefined)
+        {
+            TalantUI();
+        }
+        else
+        {
+            $.Msg("Trying in TalantUI!");
+            $.Schedule(1, TalantUI)
+        }
 
     </script>
 

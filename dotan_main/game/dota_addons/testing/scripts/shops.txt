@@ -454,6 +454,7 @@
 	"magics"
 	{
 		"item"		"item_banana"
+		"item"		"item_outpost"
 	}
 
 	//

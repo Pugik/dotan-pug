@@ -37,6 +37,16 @@
 
 		"DOTA_Tooltip_Ability_item_banana_Description"	"<h1>Use: Eat Banana</h1> Instantly restores %health% health and %mana% mana.<br><br>Drops a banana peel when consumed, which causes the next enemy which step on it to slip, moving around randomly and getting disabled. The peel disappears once an enemy slipped on it."
 
+			//-------------------------------------------------------------------
+			//	item_outpost
+			//-------------------------------------------------------------------
+
+		"DOTA_Tooltip_Ability_item_outpost"	"Outpost Kit"
+		"DOTA_Tooltip_Ability_item_outpost_Description"	"<h1>Use: Deploy Outpost</h1> When used, you will set up an outpost in a location of your choice. A new teleportation point is now available to you by clicking on the outpost. <br><br>The outpost is available during: %tooltip_time_min% minutes."
+		"DOTA_Tooltip_Ability_item_outpost_Lore" "This item has enormous potential."
+
+		"npc_dotan_outpost" "Outpost"
+
 		//-------------------------------------------------------------------
 		//	Shop Tabs
 		//-------------------------------------------------------------------	

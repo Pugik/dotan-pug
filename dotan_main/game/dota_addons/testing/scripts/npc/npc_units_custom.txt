@@ -1,10 +1,29 @@
 #base lua_items/item_banana/unit.txt
+#base lua_items/item_outpost/unit.txt
 
 "DOTAUnits"
 {	
     "npc_dota_courier"
 	{
         "Ability6"					"generic_hidden"
+    }
+	
+    "npc_dota_roshan"
+    {
+		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
+		"AttackDamageMin"			"25"		// Damage range min.
+		"AttackDamageMax"			"25"		// Damage range max.
+		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
+		"AttackRate"				"3.5"	    // Speed of attack.
+		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
+		"ModelScale"				"1.2"
+		"Level"						"18"
+
+		"ArmorPhysical"				"15"
+		"MagicalResistance"		    "30"
+
+		"StatusHealth"				"6000" // Doesn't work, it will always be 6000 at the start.
+		"StatusHealthRegen"			"10"
     }
 
     "npc_dota_goodguys_tower1_top"

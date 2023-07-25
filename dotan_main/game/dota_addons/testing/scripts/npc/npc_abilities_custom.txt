@@ -1,16 +1,20 @@
 "DOTAAbilities"
 {
+    //=================================================================================================================
+	// Ability: Outpost TP
 	//=================================================================================================================
-	// ai_banana
-	//=================================================================================================================
-	"ai_banana"
+    "outpost_tp"
 	{
 		// General
 		//-------------------------------------------------------------------------------------------------------------
-		"BaseClass"                     "ability_lua"
-		"AbilityType"					"DOTA_ABILITY_TYPE_BASIC"
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
-		"SpellDispellableType"			"SPELL_DISPELLABLE_NO"
-		"ScriptFile"                    "lua_items/item_banana/ai_banana.lua"
-	}
+		"BaseClass"             		"ability_lua"
+		"ScriptFile"					"lua_items/item_outpost/outpost_tp.lua"
+
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"	
+		"AbilityTextureName"			"modifier_banana_stun"
+
+        "IsCastableWhileHidden"			"1"
+        "MaxLevel" 						"1"
+		"IsOnCastBar"					"1"
+    }
 }

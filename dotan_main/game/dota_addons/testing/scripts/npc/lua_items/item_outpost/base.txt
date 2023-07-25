@@ -1,0 +1,41 @@
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// item_outpost
+	//=================================================================================================================
+	"item_outpost"
+	{	
+		"BaseClass"                     "item_lua"
+		"ScriptFile"                    "lua_items/item_outpost/item_outpost.lua"
+		"AbilityTextureName"			"item_outpost"	
+		"AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		
+		// Stats
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityCastRange"				"500"
+		"AbilityCastPoint"				"0.0"
+		"AbilityCooldown"				"1.0"
+		
+		// Item Info
+		//-------------------------------------------------------------------------------------------------------------
+		"ItemCost"						"3500"
+		"ItemAliases"					"outpost"
+		"ItemStackable"					"1"
+		"ItemInitialCharges"			"1"
+		"ItemPermanent"					"0"
+
+		"IsTempestDoubleClonable"		"0"
+		"ShouldBeInitiallySuggested"	"1"
+
+        "GlobalShop"					"1"
+		"SecretShop"					"1"
+
+		// Special	
+		//-------------------------------------------------------------------------------------------------------------
+		"AbilityValues"
+		{
+			"lifetime"				"600"
+			"tooltip_time_min"		"10"
+		}
+	}
+}
