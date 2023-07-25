@@ -20,9 +20,11 @@ function item_outpost:OnSpellStart()
     local caster_team = caster:GetTeamNumber()
 
     if caster_team == 1 then
-        ent_outpost:SetMaterialGroup("2")
-    else
         ent_outpost:SetMaterialGroup("1")
+    end
+    
+    if caster_team == 3 then
+        ent_outpost:SetMaterialGroup("2")
     end
 
     ent_outpost:EmitSound("Outpost.Captured")
