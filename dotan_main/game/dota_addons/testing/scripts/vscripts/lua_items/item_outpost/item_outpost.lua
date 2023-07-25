@@ -19,7 +19,7 @@ function item_outpost:OnSpellStart()
 
     local caster_team = caster:GetTeamNumber()
 
-    if caster_team == 1 then
+    if caster_team == 2 then
         ent_outpost:SetMaterialGroup("1")
     end
     
