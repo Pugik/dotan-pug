@@ -61,9 +61,21 @@
 
 		//-------------------------------------------------------------------
 		//	Modifiers
-		//-------------------------------------------------------------------	
+		//-------------------------------------------------------------------
+			//-------------------------------------------------------------------
+			//	modifier_streak_count
+			//-------------------------------------------------------------------	
 
 		"DOTA_Tooltip_modifier_streak_count"	"Severity of Sins"
 		"DOTA_Tooltip_modifier_streak_count_Description"	"<font color='#F1550A'><h1>Curse</h1></font><br>If hero dies by the hands of enemy team, he will lose the number of items from the inventory equal to the level of the curse.<br>The items to be dropped are selected in random order.<br><br>+ <font color='#F0F0F0'><b>1</b></font> level for every 3 heroes killed.<br>Maximum curse level: <font color='#F0F0F0'><b>6</b></font><br><br><font color='#757575'><i>You will find atonement for your sins only by the hands of your enemy.</i></font>"
+	
+			//-------------------------------------------------------------------
+			//	modifier_creep_plyarmor
+			//-------------------------------------------------------------------
+
+		"DOTA_Tooltip_modifier_creep_plyarmor"	"Battle Aura"
+		"DOTA_Tooltip_modifier_creep_plyarmor_Description"	"Inspire all allied heroes, giving them <b>20</b> armor and <b>20%%</b> magic resistance."
+		"DOTA_Tooltip_modifier_creep_plyarmor_aura"	"Battle Aura"
+		"DOTA_Tooltip_modifier_creep_plyarmor_aura_Description"	"Your hero is inspired by the heroism of allied creeps, you gain <b>20</b> armor and <b>20%%</b> magic resistance."
 	}
 }

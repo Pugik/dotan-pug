@@ -11,10 +11,10 @@
     "npc_dota_roshan"
     {
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
-		"AttackDamageMin"			"25"		// Damage range min.
-		"AttackDamageMax"			"25"		// Damage range max.
+		"AttackDamageMin"			"30"		// Damage range min.
+		"AttackDamageMax"			"30"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackRate"				"3.5"	    // Speed of attack.
+		"AttackRate"				"2.5"	    // Speed of attack.
 		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
 		"ModelScale"				"1.2"
 		"Level"						"18"
