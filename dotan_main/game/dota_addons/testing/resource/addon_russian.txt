@@ -77,5 +77,15 @@
 		"DOTA_Tooltip_modifier_creep_plyarmor_Description"	"Вдохновляет всех союзных героев, давая им <b>20</b> единиц брони и <b>20%%</b> сопротивления магии."
 		"DOTA_Tooltip_modifier_creep_plyarmor_aura"	"Battle Aura"
 		"DOTA_Tooltip_modifier_creep_plyarmor_aura_Description"	"Ваш герой вдохновлен героизмом союзных крипов, вы получаете <b>20</b> единиц брони и <b>20%%</b> сопротивления магии."
+	
+			//-------------------------------------------------------------------
+			//	modifier_ancient_defense
+			//------------------------------------------------------------------- 
+		
+		"DOTA_Tooltip_modifier_ancient_defense"	"Ancient Protection"
+		"DOTA_Tooltip_modifier_ancient_defense_Description"	"Если герой, защищающий древнего, находится в радиусе <b>2750</b>, древний становится бессмертным."
+
+		"DOTA_Tooltip_modifier_ancient_defense_bonus"	"Ancient Plea"
+		"DOTA_Tooltip_modifier_ancient_defense_bonus_Description"	"Ваш герой получает <b>75</b> единиц скорости передвижения."	
 	}
 }

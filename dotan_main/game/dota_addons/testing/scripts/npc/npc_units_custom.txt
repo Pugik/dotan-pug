@@ -14,13 +14,13 @@
 		"AttackDamageMin"			"30"		// Damage range min.
 		"AttackDamageMax"			"30"		// Damage range max.
 		"AttackDamageType"			"DAMAGE_TYPE_ArmorPhysical"
-		"AttackRate"				"2.5"	    // Speed of attack.
+		"AttackRate"				"1.75"	    // Speed of attack.
 		"AttackAnimationPoint"		"0.6"		// Normalized time in animation cycle to attack.
-		"ModelScale"				"1.2"
+		"ModelScale"				"1.0"
 		"Level"						"18"
 
-		"ArmorPhysical"				"15"
-		"MagicalResistance"		    "30"
+		"ArmorPhysical"				"-666" // We reduce armor, so he could take double damage.
+		"MagicalResistance"		    "0"
 
 		"StatusHealth"				"6000" // Doesn't work, it will always be 6000 at the start.
 		"StatusHealthRegen"			"10"

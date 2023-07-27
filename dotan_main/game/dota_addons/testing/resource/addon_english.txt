@@ -77,5 +77,15 @@
 		"DOTA_Tooltip_modifier_creep_plyarmor_Description"	"Inspire all allied heroes, giving them <b>20</b> armor and <b>20%%</b> magic resistance."
 		"DOTA_Tooltip_modifier_creep_plyarmor_aura"	"Battle Aura"
 		"DOTA_Tooltip_modifier_creep_plyarmor_aura_Description"	"Your hero is inspired by the heroism of allied creeps, you gain <b>20</b> armor and <b>20%%</b> magic resistance."
+	
+			//-------------------------------------------------------------------
+			//	modifier_ancient_defense
+			//------------------------------------------------------------------- 
+		
+		"DOTA_Tooltip_modifier_ancient_defense"	"Ancient Protection"
+		"DOTA_Tooltip_modifier_ancient_defense_Description"	"If the hero defending this ancient is within <b>2750</b> radius, the ancient is immortal."
+
+		"DOTA_Tooltip_modifier_ancient_defense_bonus"	"Ancient Plea"
+		"DOTA_Tooltip_modifier_ancient_defense_bonus_Description"	"Your hero is accelerated by <b>75</b> movement speed."
 	}
 }
