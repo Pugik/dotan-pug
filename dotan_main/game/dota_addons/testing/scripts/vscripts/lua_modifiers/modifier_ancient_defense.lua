@@ -201,6 +201,24 @@ function modifier_ancient_defense_effect:OnDestroy()
 	self:GetParent():SetBaseHealthRegen(12.0)
 end
 
+function modifier_ancient_defense_effect:GetEffectName()
+	local defense_effect = "particles/dotan/ancient_aura_good.vpcf"
+
+	if self:GetParent():GetTeamNumber() == 2 then
+		defense_effect = "particles/dotan/ancient_aura_good.vpcf"
+	end
+
+	if self:GetParent():GetTeamNumber() == 3 then
+		defense_effect = "particles/dotan/ancient_aura_bad.vpcf"
+	end
+
+	return defense_effect
+end
+
+function modifier_ancient_defense_effect:GetEffectAttachType()
+	return PATTACH_CENTER_FOLLOW
+end
+
 -------------------------------------------------------------------------------------
 
 modifier_ancient_defense_bonus = class({})
