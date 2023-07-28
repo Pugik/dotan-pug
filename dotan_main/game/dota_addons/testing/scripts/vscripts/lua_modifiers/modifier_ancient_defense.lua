@@ -4,7 +4,7 @@ LinkLuaModifier( "modifier_ancient_defense_effect", "lua_modifiers/modifier_anci
 LinkLuaModifier( "modifier_ancient_defense_effect_hero", "lua_modifiers/modifier_ancient_defense", LUA_MODIFIER_MOTION_NONE )
 
 function modifier_ancient_defense:IsHidden() 
-	return false 
+	return true 
 end
 
 function modifier_ancient_defense:OnCreated(keys)
@@ -26,6 +26,12 @@ function modifier_ancient_defense:OnIntervalThink()
 					self:PlayEffects( friend )
 				end
 			end
+		end
+	end
+
+	if friends == nil then 
+		if self:GetParent():FindModifierByName("modifier_ancient_defense_effect") then
+			self:GetParent():RemoveModifierByName("modifier_ancient_defense_effect")
 		end
 	end
 
@@ -58,7 +64,10 @@ function modifier_ancient_defense:FindFriends(radius)
 		false 
 	)
 	
-	return friends
+	if #friends > 0 then
+		return friends
+	end
+	return nil
 end
 
 function modifier_ancient_defense:WorkFriends(friends)
@@ -73,25 +82,29 @@ end
 function modifier_ancient_defense:PlayEffects(friend)
 	if friend.effect_cast_enabled then return end
 
-	local particle_cast = "particles/econ/items/pugna/pugna_ti10_immortal/pugna_ti10_immortal_life_drain_gold_shard_beam_core.vpcf"
+	local particle_cast = "particles/units/heroes/hero_pugna/pugna_shard_life_drain.vpcf"
+
+	if friend:GetTeamNumber() == 2 then
+		particle_cast = "particles/econ/items/pugna/pugna_ti10_immortal/pugna_ti10_immortal_life_drain_gold.vpcf"
+	end
+
+	if friend:GetTeamNumber() == 3 then
+		particle_cast = "particles/econ/items/pugna/pugna_ti10_immortal/pugna_ti10_immortal_life_drain.vpcf"
+	end
+
 	local entity = self:GetParent()
 	
 	friend.effect_cast = ParticleManager:CreateParticle(particle_cast, PATTACH_ABSORIGIN, entity )
-	local attach = "attach_attack1"
-	if entity:ScriptLookupAttachment( "attach_attack2" ) ~= 0 then attach = "attach_attack2" end
+
 	ParticleManager:SetParticleControlEnt(
 		friend.effect_cast,
 		0,
 		entity,
-		PATTACH_POINT_FOLLOW,
-		attach,
-		Vector(0,0,0), 
+		PATTACH_POINT,
+		"attach_fx",
+		Vector(0,0,250), 
 		true 
 	)
-
-	friend.effect_cast_enabled = true
-
-	local direction = (entity:GetOrigin() - friend:GetOrigin()):Normalized()
 
 	ParticleManager:SetParticleControlEnt(
 		friend.effect_cast,
@@ -102,9 +115,8 @@ function modifier_ancient_defense:PlayEffects(friend)
 		Vector(0,0,0), 
 		true 
 	)
-	ParticleManager:SetParticleControl( friend.effect_cast, 2, friend:GetOrigin() )
-	ParticleManager:SetParticleControl( friend.effect_cast, 3, friend:GetOrigin() + direction )
-	ParticleManager:SetParticleControlForward( friend.effect_cast, 3, -direction )
+
+	friend.effect_cast_enabled = true
 end
 
 function modifier_ancient_defense:StopEffects( friend )
@@ -202,7 +214,7 @@ function modifier_ancient_defense_bonus:IsDebuff()
 end
 
 function modifier_ancient_defense_bonus:GetTexture()
-   return "modifier_ancient_defense"
+   return "modifier_ancient_defense_bonus"
 end
 
 function modifier_ancient_defense_bonus:DeclareFunctions()
