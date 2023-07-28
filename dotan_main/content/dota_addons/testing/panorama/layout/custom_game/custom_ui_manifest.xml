@@ -14,6 +14,12 @@
 		newUI.FindChildTraverse("GridNeutralsTab").style.visibility = "collapse";
 
         // 
+        // Disable minimal shop and guide shop
+        //
+
+		newUI.FindChildTraverse("ToggleMinimalShop").style.visibility = "collapse";
+
+        // 
         // Disable talant tree
         //
 
@@ -205,6 +211,15 @@
                 ff.FindChildTraverse("CanPurchaseOverlay").style["background-image"] = "url('s2r://panorama/images/hud/shopborder_canpurchase_psd.vtex')"
             
                 ff.FindChildTraverse("SecretShop").style.visibility = "collapse";
+            }
+
+            //
+            // Fix column grid in shop.
+            //
+
+            if ( !newUI.FindChildTraverse("shop").BHasClass("ShopLarge") && newUI.FindChildTraverse("shop").BHasClass("ShopOpen") )
+            {
+                newUI.FindChildTraverse("shop").AddClass("ShopLarge")
             }
 
             //

@@ -11,7 +11,6 @@
 		"ScriptFile"					"lua_items/item_outpost/outpost_tp.lua"
 
         "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_NO_TARGET | DOTA_ABILITY_BEHAVIOR_CHANNELLED"	
-		"AbilityTextureName"			"modifier_banana_stun"
 
         "IsCastableWhileHidden"			"1"
         "MaxLevel" 						"1"

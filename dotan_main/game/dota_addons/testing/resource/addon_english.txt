@@ -81,9 +81,12 @@
 			//-------------------------------------------------------------------
 			//	modifier_ancient_defense
 			//------------------------------------------------------------------- 
-		
-		"DOTA_Tooltip_modifier_ancient_defense"	"Ancient Protection"
-		"DOTA_Tooltip_modifier_ancient_defense_Description"	"If the hero defending this ancient is within <b>2750</b> radius, the ancient is immortal."
+
+		"DOTA_Tooltip_modifier_ancient_defense_effect_hero"	"Depletion of Life"
+		"DOTA_Tooltip_modifier_ancient_defense_effect_hero_Description"	"As long as this hero is within the radius of the ancient aura, the Ancient is immortal."
+
+		"DOTA_Tooltip_modifier_ancient_defense_effect"	"Ancient Protection"
+		"DOTA_Tooltip_modifier_ancient_defense_effect_Description"	"An Ancient immortal because of the powers of the heroes protecting him."
 
 		"DOTA_Tooltip_modifier_ancient_defense_bonus"	"Ancient Plea"
 		"DOTA_Tooltip_modifier_ancient_defense_bonus_Description"	"Your hero is accelerated by <b>75</b> movement speed."
