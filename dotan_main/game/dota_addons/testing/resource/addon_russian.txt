@@ -5,6 +5,26 @@
 	"Tokens"
 	{
 		"addon_game_name"		"DotaN"
+
+		//-------------------------------------------------------------------
+		//	Custom Error's
+		//-------------------------------------------------------------------
+
+		"error_outpost_cooldown"	"Свиток городского портала перезаряжается."
+		"error_outpost_enemy"		"Невозможно атаковать"
+		"error_outpost_no_tp"		"Нет зарядов Town Portal Scroll"
+
+		//-------------------------------------------------------------------
+		//	Shop Tabs
+		//-------------------------------------------------------------------	
+
+		"DOTA_SUBSHOP_WEAPONS_ARMOR"		"Потайная лавка" 
+		"DOTA_SUBSHOP_SECRETSHOP"			"Снаряжение"
+
+		"DOTA_SUBSHOP_BASICS"		"Потайная лавка"
+		"DOTA_SUBSHOP_SUPPORT"		"Снаряжение" 
+		"DOTA_SUBSHOP_MAGICS"		"Разное" 
+		"DOTA_SUBSHOP_DEFENSE"		"Артефакты"
 		
 		//-------------------------------------------------------------------
 		//	Items
@@ -48,18 +68,6 @@
 		"npc_dotan_outpost" "Outpost"
 
 		//-------------------------------------------------------------------
-		//	Shop Tabs
-		//-------------------------------------------------------------------	
-
-		"DOTA_SUBSHOP_WEAPONS_ARMOR"		"Потайная лавка" 
-		"DOTA_SUBSHOP_SECRETSHOP"			"Снаряжение"
-
-		"DOTA_SUBSHOP_BASICS"		"Потайная лавка"
-		"DOTA_SUBSHOP_SUPPORT"		"Снаряжение" 
-		"DOTA_SUBSHOP_MAGICS"		"Разное" 
-		"DOTA_SUBSHOP_DEFENSE"		"Артефакты"
-
-		//-------------------------------------------------------------------
 		//	Modifiers
 		//-------------------------------------------------------------------	
 			//-------------------------------------------------------------------
@@ -81,11 +89,14 @@
 			//-------------------------------------------------------------------
 			//	modifier_ancient_defense
 			//------------------------------------------------------------------- 
-		
-		"DOTA_Tooltip_modifier_ancient_defense"	"Ancient Protection"
-		"DOTA_Tooltip_modifier_ancient_defense_Description"	"Если герой, защищающий древнего, находится в радиусе <b>2750</b>, древний становится бессмертным."
+
+		"DOTA_Tooltip_modifier_ancient_defense_effect_hero"	"Depletion of Life"
+		"DOTA_Tooltip_modifier_ancient_defense_effect_hero_Description"	"Пока герой находится в радиусе действия ауры Древнего, Древний бессмертен."
+
+		"DOTA_Tooltip_modifier_ancient_defense_effect"	"Ancient Protection"
+		"DOTA_Tooltip_modifier_ancient_defense_effect_Description"	"Древний бессмертен благодаря силе защищающих его героев."
 
 		"DOTA_Tooltip_modifier_ancient_defense_bonus"	"Ancient Plea"
-		"DOTA_Tooltip_modifier_ancient_defense_bonus_Description"	"Ваш герой получает <b>75</b> единиц скорости передвижения."	
+		"DOTA_Tooltip_modifier_ancient_defense_bonus_Description"	"Ваш герой ускоряется на <b>75</b> скорости передвижения."
 	}
 }

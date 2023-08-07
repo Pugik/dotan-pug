@@ -40,10 +40,21 @@ function modifier_outpost:IsHidden() return true end
 
 function modifier_outpost:CheckState()
     local state = {
-        [MODIFIER_STATE_INVULNERABLE] = true,
-        [MODIFIER_STATE_NO_UNIT_COLLISION] = true,
         [MODIFIER_STATE_NO_HEALTH_BAR] = true,
+        [MODIFIER_STATE_MAGIC_IMMUNE] = true,
     }
 
     return state
 end
+
+function modifier_outpost:DeclareFunctions() 
+    return {
+        MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PHYSICAL,
+        MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_MAGICAL,
+        MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PURE,
+    }
+end
+
+function modifier_outpost:GetAbsoluteNoDamagePhysical() return 1 end
+function modifier_outpost:GetAbsoluteNoDamageMagical() return 1 end
+function modifier_outpost:GetAbsoluteNoDamagePure() return 1 end

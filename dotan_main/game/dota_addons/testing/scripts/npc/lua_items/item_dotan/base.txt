@@ -1,0 +1,19 @@
+"DOTAAbilities"
+{
+    "item_dotan"
+	{
+		// General
+		//-------------------------------------------------------------------------------------------------------------
+        "BaseClass"                     "item_lua"
+		"ScriptFile"                    "lua_items/item_null"
+
+        "AbilityTextureName"            "item_dotan"
+
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+		"ItemCost"						"0"
+		"ItemPurchasable"				"0"
+		"ItemInitiallySellable"			"0"
+		"ItemSellable"					"0"
+	}
+}

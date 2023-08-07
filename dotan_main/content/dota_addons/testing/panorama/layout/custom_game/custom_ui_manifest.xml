@@ -1,4 +1,10 @@
 <root> 
+    <scripts>
+        <include src="file://{resources}/scripts/custom_game/display_talant_tree.js" />
+        
+        <include src="file://{resources}/scripts/custom_game/display_error.js" />
+    </scripts>
+
   	<script>	
 		//
         // Just find HUDElements in panorama 
@@ -6,6 +12,29 @@
 
         var Parent = $.GetContextPanel().GetParent().GetParent()
         var newUI = $.GetContextPanel().GetParent().GetParent().FindChildTraverse("HUDElements");
+
+        // 
+        // Disable talant tree (only table)
+        //
+        
+        newUI.FindChildTraverse("StatBranchOuter").style.visibility = "collapse";
+        newUI.FindChildTraverse("StatBranch").style.visibility = "collapse";
+
+        // 
+        // Disable neutral slot and tp slot
+        //
+        
+        newUI.FindChildTraverse("right_flare").style.visibility = "collapse";
+        newUI.FindChildTraverse("left_flare").style.visibility = "collapse";
+        newUI.FindChildTraverse("inventory_composition_layer_container").style.visibility = "collapse";
+
+        // 
+        // Disable backpack slots
+        //
+
+		newUI.FindChildTraverse("inventory_slot_6").style.visibility = "collapse";
+        newUI.FindChildTraverse("inventory_slot_7").style.visibility = "collapse";
+        newUI.FindChildTraverse("inventory_slot_8").style.visibility = "collapse";
 
         // 
         // Disable neutral tab
@@ -18,16 +47,6 @@
         //
 
 		newUI.FindChildTraverse("ToggleMinimalShop").style.visibility = "collapse";
-
-        // 
-        // Disable talant tree
-        //
-
-		newUI.FindChildTraverse("StatBranch").style.visibility = "collapse";
-        newUI.FindChildTraverse("StatBranchHotkey").style.visibility = "collapse";
-        newUI.FindChildTraverse("level_stats_frame").style.visibility = "collapse";
-
-        newUI.FindChildTraverse("StatBranchOuter").style.visibility = "collapse";
 
         //
         // Resize remaining shop tabs
@@ -240,47 +259,6 @@
             $.Msg("Trying in MainUIwithLoop!");
             $.Schedule(1, MainUIwithLoop)
         }
- 
-        function TalantUI()
-		{
-            // 
-            // Disable talant tree in scoreboard
-            //
-            if (newUI.FindChildTraverse("RadiantTeamContainer").FindChildTraverse("RadiantPlayer0") != null)
-            {
-                for (let i = 0; i < 5; i++) 
-                {
-                    newUI.FindChildTraverse("RadiantTeamContainer").FindChildTraverse("RadiantPlayer"+i).FindChildTraverse("TalentTree").style.visibility = "collapse";
-                    newUI.FindChildTraverse("DireTeamContainer").FindChildTraverse("DirePlayer"+i).FindChildTraverse("TalentTree").style.visibility = "collapse";
-                }
-
-                for (var ff of newUI.FindChildTraverse("RadiantHeader").FindChildrenWithClassTraverse("TalentColumn")) 
-                {
-                    ff.style.visibility = "collapse";
-                }
-
-                for (var ff of newUI.FindChildTraverse("DireHeader").FindChildrenWithClassTraverse("TalentColumn")) 
-                {
-                    ff.style.visibility = "collapse";
-                }
-            }
-            else
-            {
-                //$.Msg("Trying in TalantUI");
-                $.Schedule(1, TalantUI)
-            }
-        }
-
-        if (Parent.FindChildTraverse("GameAndPlayersRoot") != undefined)
-        {
-            TalantUI();
-        }
-        else
-        {
-            $.Msg("Trying in TalantUI!");
-            $.Schedule(1, TalantUI)
-        }
-
     </script>
 
     <Panel>

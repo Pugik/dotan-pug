@@ -7,6 +7,26 @@
 		"addon_game_name"		"DotaN"
 		
 		//-------------------------------------------------------------------
+		//	Custom Error's
+		//-------------------------------------------------------------------
+
+		"error_outpost_cooldown"	"Town Portal Scroll on Cooldown."
+		"error_outpost_enemy_team"		"Can't Attack"
+		"error_outpost_no_tp"		"No Town Portal Scroll Charges"
+
+		//-------------------------------------------------------------------
+		//	Shop Tabs
+		//-------------------------------------------------------------------	
+
+		"DOTA_SUBSHOP_WEAPONS_ARMOR"		"Secret Shop" 
+		"DOTA_SUBSHOP_SECRETSHOP"			"Equipment"
+
+		"DOTA_SUBSHOP_BASICS"		"Secret Shop"
+		"DOTA_SUBSHOP_SUPPORT"		"Equipment" 
+		"DOTA_SUBSHOP_MAGICS"		"Miscellaneous" 
+		"DOTA_SUBSHOP_DEFENSE"		"Artifacts"
+		
+		//-------------------------------------------------------------------
 		//	Items
 		//-------------------------------------------------------------------
 	
@@ -46,18 +66,6 @@
 		"DOTA_Tooltip_Ability_item_outpost_Lore" "This item has enormous potential."
 
 		"npc_dotan_outpost" "Outpost"
-
-		//-------------------------------------------------------------------
-		//	Shop Tabs
-		//-------------------------------------------------------------------	
-
-		"DOTA_SUBSHOP_WEAPONS_ARMOR"		"Secret Shop" 
-		"DOTA_SUBSHOP_SECRETSHOP"			"Equipment"
-
-		"DOTA_SUBSHOP_BASICS"		"Secret Shop"
-		"DOTA_SUBSHOP_SUPPORT"		"Equipment" 
-		"DOTA_SUBSHOP_MAGICS"		"Miscellaneous" 
-		"DOTA_SUBSHOP_DEFENSE"		"Artifacts"
 
 		//-------------------------------------------------------------------
 		//	Modifiers

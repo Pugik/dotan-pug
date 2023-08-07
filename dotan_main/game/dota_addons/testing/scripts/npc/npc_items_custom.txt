@@ -1,5 +1,5 @@
 //
-// Items Custom (23.07.23)
+// Items Custom (07.08.23)
 //
 
 //
@@ -10,6 +10,7 @@
 #base "lua_items/item_trident_custom/base.txt" // bla bla bla this custom trident.
 #base "lua_items/item_banana/base.txt"
 #base "lua_items/item_outpost/base.txt"
+#base "lua_items/item_dotan/base.txt"
 
 "DOTAAbilities"
 {
@@ -22,17 +23,20 @@
 		"ItemCost"						"300"
 		"ItemPurchasable"				"1"
 		
-		"ItemStockMax"					"0"
-		"ItemStockTime"					"0"
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"999999"
+		"ItemStockInitial"				"0"
+		
+		"ItemKillable"					"1"
 	}
 
 	"item_tpscroll"
 	{
 		"GlobalShop"					"1"
 		"SecretShop"					"1"
+		"SideShop"						"1"
 
-		"ItemInitialCharges"			"0"
-		"ItemPermanent"					"1"
+		"ItemInitialCharges"			"1"
 
 		// Stats
 		//-------------------------------------------------------------------------------------------------------------
@@ -154,6 +158,7 @@
 		"IsObsolete"					"0"
 
 		"SecretShop"					"1"	
+		"SideShop"						"1"	
 		
 		"ItemRecipe"					"1"
 		"ItemResult"					"item_iron_talon"
@@ -173,6 +178,7 @@
 		"AbilityCooldown"				"25.0"
 
 		"SecretShop"					"1"	
+		"SideShop"						"1"	
 
 		"Model"							"models/props_gameplay/red_box.vmdl"
 		
@@ -266,7 +272,7 @@
 
 		// Item Info
 		//-------------------------------------------------------------------------------------------------------------		
-		"ItemCost"						"1650"	
+		"ItemCost"						"1250"	
 		"ItemShopTags"					""
 		"ItemIsNeutralDrop"				"0"
 		"ItemPurchasable"				"1"
@@ -274,6 +280,7 @@
 		"ItemSellable"					"0"
 
 		"SecretShop"					"1"	
+		"SideShop"						"1"
 		
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
@@ -316,6 +323,7 @@
 		"IsObsolete"					"0"
 
 		"SecretShop"					"1"	
+		"SideShop"						"1"
 		
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
@@ -341,6 +349,7 @@
 		"ItemShopTags"					""
 
 		"SecretShop"					"1"	
+		"SideShop"						"1"
 
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
@@ -364,8 +373,6 @@
 		//-------------------------------------------------------------------------------------------------------------
 		"ItemCost"						"0"
 		"ItemShopTags"					""
-
-		"SecretShop"					"1"	
 
 		// Recipe
 		//-------------------------------------------------------------------------------------------------------------
@@ -411,12 +418,13 @@
 	"item_recipe_travel_boots"
 	{
 		"SecretShop"					"1"	
+		"SideShop"						"1"
 	}
 
 	"item_travel_boots"
 	{
 		"SecretShop"					"1"
-		"ItemIsNeutralDrop"				"1"
+		"SideShop"						"1"
 	}
 
 	"item_recipe_travel_boots_2"
@@ -427,7 +435,86 @@
 	"item_travel_boots_2"
 	{
 		"SecretShop"					"1"
-		"ItemIsNeutralDrop"				"1"
+	}
+
+	//
+	//
+	// Default Side Shop
+	//
+	//
+
+		//
+		// 1
+		//
+
+	"item_blink"
+	{
+		"SideShop"						"1"
+	}
+
+	"item_blood_grenade"
+	{
+		"SideShop"						"1"
+	}
+
+	"item_gauntlets"
+	{
+		"SideShop"						"1"
+	}
+
+	"item_slippers"
+	{
+		"SideShop"						"1"
+	}
+
+	"item_mantle"
+	{
+		"SideShop"						"1"
+	}
+
+	"item_diadem"
+	{
+		"SideShop"						"1"
+	}
+
+	"item_mask_of_madness"
+	{
+		"SideShop"						"1"
+	}
+
+	"item_recipe_blade_mail"
+	{
+		"SideShop"						"1"
+	}
+
+	"item_blade_mail"
+	{
+		"SideShop"						"1"
+	}
+
+	"item_oblivion_staff"
+	{
+		"SideShop"						"1"
+	}
+
+	"item_broadsword"
+	{
+		"SideShop"						"1"
+	}
+
+	"item_quarterstaff"
+	{
+		"SideShop"						"1"
+	}
+
+	"item_dagon"
+	{
+		"SideShop"						"1"
+	}
+
+	"item_recipe_dagon"
+	{
+		"SideShop"						"1"
 	}
     
     //
@@ -445,6 +532,7 @@
 		"ItemCost"						"75"
 		
 		"SecretShop"					"1"
+		"SideShop"						"1"
 		
 		"ItemStockMax"					"0"
 		"ItemStockInitial"				"0"
@@ -456,6 +544,7 @@
 		"ItemCost"						"75"
 		
 		"SecretShop"					"1"
+		"SideShop"						"1"
 		
 		"ItemStockMax"					"0"
 		"ItemStockInitial"				"0"
@@ -467,6 +556,7 @@
 		"ItemCost"						"100"
 
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_smoke_of_deceit"
@@ -474,6 +564,7 @@
 		"ItemCost"						"125"
 		
 		"SecretShop"					"1"
+		"SideShop"						"1"
 		
 		"ItemStockMax"					"0"
 		"ItemStockInitial"				"0"
@@ -487,11 +578,13 @@
 	"item_magic_stick"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_tango"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 		
 		"ItemStockMax"					"0"
 		"ItemStockInitial"				"0"
@@ -501,6 +594,7 @@
 	"item_flask"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 
 		"ItemStockMax"					"0"
 		"ItemStockInitial"				"0"
@@ -510,6 +604,7 @@
 	"item_faerie_fire"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 		//
@@ -519,6 +614,7 @@
 	"item_bottle"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_enchanted_mango"
@@ -526,6 +622,7 @@
 		"AbilityCooldown"				"2.0"
 		
 		"SecretShop"					"1"
+		"SideShop"						"1"
 		
 		"ItemStockMax"					"0"
 		"ItemStockInitial"				"0"
@@ -535,6 +632,7 @@
 	"item_clarity"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 
 		"ItemStockMax"					"0"
 		"ItemStockInitial"				"0"
@@ -544,6 +642,7 @@
 	"item_infused_raindrop"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 
 		"ItemStockMax"					"0"
 		"ItemStockInitial"				"0"
@@ -557,21 +656,25 @@
 	"item_quelling_blade"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_branches"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_ring_of_regen"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_sobi_mask"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 		//
@@ -581,27 +684,31 @@
 	"item_boots"
 	{
 		"SecretShop"					"1"
-		"ItemIsNeutralDrop"				"1"
+		"SideShop"						"1"
 	}
 
 	"item_wind_lace"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_headdress"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_recipe_urn_of_shadows"
 	{
 		"SecretShop"					"1"	
+		"SideShop"						"1"
 	}
 
 	"item_urn_of_shadows"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 		//
@@ -611,22 +718,25 @@
 	"item_tranquil_boots"
 	{
 		"SecretShop"					"1"
-		"ItemIsNeutralDrop"				"1"
+		"SideShop"						"1"
 	}
 
 	"item_gloves"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_ring_of_protection"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_circlet"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 		//
@@ -636,22 +746,25 @@
 	"item_power_treads"
 	{
 		"SecretShop"					"1"
-		"ItemIsNeutralDrop"				"1"
+		"SideShop"						"1"
 	}
 
 	"item_belt_of_strength"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_boots_of_elves"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_robe"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 		//
@@ -661,22 +774,25 @@
 	"item_phase_boots"
 	{
 		"SecretShop"					"1"
-		"ItemIsNeutralDrop"				"1"
+		"SideShop"						"1"
 	}
 
 	"item_blades_of_attack"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_chainmail"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_fluffy_hat"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 		//
@@ -686,7 +802,7 @@
 	"item_arcane_boots"
 	{
 		"SecretShop"					"1"
-		"ItemIsNeutralDrop"				"1"
+		"SideShop"						"1"
 
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -718,21 +834,25 @@
 	"item_void_stone"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_recipe_buckler"
 	{
 		"SecretShop"					"1"	
+		"SideShop"						"1"
 	}
 
 	"item_buckler"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_lifesteal"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 		//
@@ -742,6 +862,7 @@
 	"item_energy_booster"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_recipe_aether_lens"
@@ -781,6 +902,7 @@
 	"item_vitality_booster"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_ring_of_health"
@@ -839,21 +961,25 @@
 	"item_recipe_veil_of_discord"
 	{
 		"SecretShop"					"1"	
+		"SideShop"						"1"
 	}
 
 	"item_veil_of_discord"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_recipe_ring_of_basilius"
 	{
 		"SecretShop"					"1"	
+		"SideShop"						"1"
 	}
 
 	"item_ring_of_basilius"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_recipe_bloodstone"
@@ -883,26 +1009,31 @@
 	"item_recipe_soul_ring"
 	{
 		"SecretShop"					"1"	
+		"SideShop"						"1"
 	}
 
 	"item_soul_ring"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_crown"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_medallion_of_courage"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_voodoo_mask"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 		//
@@ -912,21 +1043,25 @@
 	"item_recipe_hand_of_midas"
 	{
 		"SecretShop"					"1"	
+		"SideShop"						"1"
 	}
 
 	"item_hand_of_midas"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_stout_shield"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_blight_stone"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 		//
@@ -941,7 +1076,6 @@
 	"item_boots_of_bearing"
 	{
 		"SecretShop"					"1"
-		"ItemIsNeutralDrop"				"1"
 	}
 
 	"item_recipe_ancient_janggo"
@@ -962,6 +1096,7 @@
 	"item_orb_of_venom"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 		//
@@ -976,7 +1111,6 @@
 	"item_guardian_greaves"
 	{
 		"SecretShop"					"1"
-		"ItemIsNeutralDrop"				"1"
 	}
 
 	"item_recipe_meteor_hammer"
@@ -1022,21 +1156,25 @@
 	"item_recipe_magic_wand"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 	
 	"item_recipe_bracer"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_recipe_wraith_band"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_recipe_null_talisman"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 	
 	"item_recipe_solar_crest"
@@ -1100,26 +1238,31 @@
 	"item_magic_wand"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_bracer"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_wraith_band"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_null_talisman"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_poor_mans_shield"
 	{
 		"SecretShop"					"1"
+		"SideShop"						"1"
 	}
 
 	"item_solar_crest"
@@ -1154,13 +1297,15 @@
 
 	"item_force_boots"
 	{
+		"Model"							"models/props_gameplay/red_box.vmdl"
+
 		"SecretShop"					"1"
 		
 		"ItemCost"						"600"
 		"ItemPurchasable"				"1"
 		"ItemSellable"					"1"
 
-		"ItemIsNeutralDrop"				"1"
+		"ItemIsNeutralDrop"				"0"
 
 		"AbilityCastRange"				"600"
 
@@ -1193,7 +1338,10 @@
 
 	"item_ironwood_tree"
 	{
+		"Model"							"models/props_gameplay/red_box.vmdl"
+
 		"SecretShop"					"1"
+		"SideShop"						"1"
 		
 		"ItemCost"						"200"
 		"ItemPurchasable"				"1"
@@ -1221,7 +1369,10 @@
 
 	"item_royal_jelly"
 	{
+		"Model"							"models/props_gameplay/red_box.vmdl"
+
 		"SecretShop"					"1"
+		"SideShop"						"1"
 		
 		"ItemCost"						"650"
 		"ItemPurchasable"				"1"
@@ -1249,7 +1400,10 @@
 
 	"item_ring_of_aquila"
 	{
+		"Model"							"models/props_gameplay/red_box.vmdl"
+
 		"SecretShop"					"1"
+		"SideShop"						"1"
 		
 		"ItemCost"						"600"
 		"ItemPurchasable"				"1"
@@ -1261,7 +1415,10 @@
 
 	"item_philosophers_stone"
 	{
+		"Model"							"models/props_gameplay/red_box.vmdl"
+
 		"SecretShop"					"1"
+		"SideShop"						"1"
 		
 		"ItemCost"						"3000"
 		"ItemPurchasable"				"1"
@@ -1296,7 +1453,10 @@
 
 	"item_seeds_of_serenity"
 	{
+		"Model"							"models/props_gameplay/red_box.vmdl"
+
 		"SecretShop"					"1"
+		"SideShop"						"1"
 		
 		"ItemCost"						"500"
 		"ItemPurchasable"				"1"
@@ -1325,7 +1485,10 @@
 
 	"item_trusty_shovel"
 	{
+		"Model"							"models/props_gameplay/red_box.vmdl"
+
 		"SecretShop"					"1"
+		"SideShop"						"1"
 		
 		"ItemCost"						"500"
 		"ItemPurchasable"				"1"
@@ -1347,16 +1510,19 @@
 
 	"item_spider_legs"
 	{
+		"Model"							"models/props_gameplay/red_box.vmdl"
+
 		"SecretShop"					"1"
+		"SideShop"						"1"
 		
 		"ItemCost"						"600"
 		"ItemPurchasable"				"1"
 		"ItemSellable"					"1"
 		"ItemKillable"					"1"
 
-		"ItemIsNeutralDrop"				"1"
+		"ItemIsNeutralDrop"				"0"
 
-		"AbilityCooldown"				"22.0"
+		"AbilityCooldown"				"18.0"
 		
 		// Special	
 		//-------------------------------------------------------------------------------------------------------------
@@ -1371,7 +1537,10 @@
 
 	"item_unstable_wand" // pig pole
 	{
+		"Model"							"models/props_gameplay/red_box.vmdl"
+
 		"SecretShop"					"1"
+		"SideShop"						"1"
 
 		"AbilityCooldown"				"20.0"
 		"AbilityManaCost"				"25"
@@ -1402,12 +1571,18 @@
 
 	"item_giants_ring"
 	{
+		"Model"							"models/props_gameplay/red_box.vmdl"
+
 		"SecretShop"					"1"
 		
 		"ItemCost"						"600"
 		"ItemPurchasable"				"1"
 		"ItemSellable"					"1"
 		"ItemKillable"					"1"
+
+		"ItemStockMax"					"1"
+		"ItemStockTime"					"999999"
+		"ItemStockInitial"				"0"
 
 		"ItemIsNeutralDrop"				"0"
 
@@ -1445,7 +1620,10 @@
 
 	"item_arcane_ring"
 	{
+		"Model"							"models/props_gameplay/red_box.vmdl"
+
 		"SecretShop"					"1"
+		"SideShop"						"1"
 		
 		"ItemCost"						"600"
 		"ItemPurchasable"				"1"
@@ -1517,160 +1695,5 @@
 	"item_cornucopia"
 	{
 		"GlobalShop"					"1"
-	}
-
-	//
-	// Rebalanced default dota items
-	//
-
-	//=================================================================================================================
-	// Helm of the Dominator
-	//=================================================================================================================
-	"item_helm_of_the_dominator"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"164"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_CREEP"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_NOT_ANCIENTS | DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-
-		// Stats
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"700"
-		"AbilityCastPoint"				"0.0"
-		"AbilityCooldown"				"45.0"
-		"MaxUpgradeLevel"				"2"
-		"ItemBaseLevel"					"1"
-
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"0"
-		"ItemCost"						"2625"
-		"ItemShopTags"					"damage;armor;unique;hard_to_tag"
-		"ItemQuality"					"artifact"
-		"ItemAliases"					"hotd;helm of the dominator"
-		"ShouldBeSuggested"				"1"
-		
-		// Special	
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilitySpecial"
-		{
-			"01"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_stats"			"6"
-			}
-			"02"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bonus_armor"			"6"
-			}
-			"03"
-			{
-				"var_type"				"FIELD_FLOAT"
-				"bonus_regen"			"6"
-			}
-			"04"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"health_min"			"300"
-			}
-			"05"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"speed_base"			"380"
-			}
-			"06"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"bounty_gold"			"100"
-			}
-			"07"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"creep_bonus_damage"			"25"
-			}
-			"08"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"creep_bonus_hp_regen"			"12"
-			}
-			"09"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"creep_bonus_mp_regen"			"4"
-			}
-			"10"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"creep_bonus_armor"			"4"
-			}
-			"11"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"model_scale"			"0"
-			}
-			"12"
-			{
-				"var_type"				"FIELD_INTEGER"
-				"count_limit"			"1"
-			}
-		}
-	}
-
-	//=================================================================================================================
-	// Helm of the Overlord
-	//=================================================================================================================
-	"item_helm_of_the_overlord"
-	{
-		// General
-		//-------------------------------------------------------------------------------------------------------------
-		"ID"							"635"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
-		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET | DOTA_ABILITY_BEHAVIOR_DONT_RESUME_ATTACK"
-		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
-		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_CREEP"
-		"AbilityUnitTargetFlags"		"DOTA_UNIT_TARGET_FLAG_MAGIC_IMMUNE_ENEMIES"
-
-		// Stats
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityCastRange"				"700"
-		"AbilityCastPoint"				"0.0"
-		"AbilityCooldown"				"45"
-		
-
-		// Item Info
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityManaCost"				"0"
-		"ItemCost"						"6400"
-		"ItemShopTags"					"damage;armor;unique;hard_to_tag"
-		"ItemQuality"					"artifact"
-		"ItemAliases"					"hoto;helm of the overlord"
-		"ShouldBeSuggested"				"1"
-		
-		// Special	
-		//-------------------------------------------------------------------------------------------------------------
-		"AbilityValues"
-		{
-			"bonus_stats"			"7"
-			"bonus_armor"			"7"
-			"bonus_regen"			"7"
-			"health_min"			"600"
-			"speed_base"			"380"
-			"bounty_gold"			"250"
-			"creep_bonus_damage"			"70"
-			"creep_bonus_hp_regen"			"12"
-			"creep_bonus_mp_regen"			"4"
-			"creep_bonus_armor"			"7"
-			"model_scale"			"20"
-			"count_limit"			"1"
-			"armor_aura"		"3.0"
-			"mana_regen_aura"		"2"
-			"lifesteal_aura"			"20"
-			"creep_lifesteal_reduction_pct"	"40"
-			"damage_aura"			"18"
-			"aura_radius"	"1200"
-		}
 	}
 }

@@ -28,61 +28,61 @@
 
     "npc_dota_goodguys_tower1_top"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"6"
     }
 
     "npc_dota_goodguys_tower1_mid"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"6"
     }
 
     "npc_dota_goodguys_tower1_bot"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"6"
     }
 
     "npc_dota_goodguys_tower2_top"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"8"
     }
 
     "npc_dota_goodguys_tower2_mid"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"8"
     }
 
     "npc_dota_goodguys_tower2_bot"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"8"
     }
 
     "npc_dota_goodguys_tower3_top"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"10"
     }
 
     "npc_dota_goodguys_tower3_mid"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"10"
     }
 
     "npc_dota_goodguys_tower3_bot"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"10"
     }
 
     "npc_dota_goodguys_tower4"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"12"
     }
 
@@ -93,61 +93,61 @@
 
     "npc_dota_badguys_tower1_top"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"6"
     }
 
     "npc_dota_badguys_tower1_mid"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"6"
     }
 
     "npc_dota_badguys_tower1_bot"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"6"
     }
 
     "npc_dota_badguys_tower2_top"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"8"
     }
 
     "npc_dota_badguys_tower2_mid"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"8"
     }
 
     "npc_dota_badguys_tower2_bot"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"8"
     }
 
     "npc_dota_badguys_tower3_top"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"10"
     }
 
     "npc_dota_badguys_tower3_mid"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"10"
     }
 
     "npc_dota_badguys_tower3_bot"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"10"
     }
 
     "npc_dota_badguys_tower4"
 	{
-        "ModelScale"				"1.5"
+        "ModelScale"				"1"
         "ArmorPhysical"				"12"
     }
 
