@@ -10,6 +10,7 @@
 		"BaseClass"					"npc_dota_creature"	// Class of entity of link to.
 		"Model"						"models/props_structures/outpost.vmdl"	// Model.
 		"SoundSet"					"Creep_Good_Melee"					// Name of sound set.
+
 		"MinimapIcon"				"minimap_miscbuilding"
 		
 		"ModelScale"				"0.3"
@@ -55,15 +56,15 @@
 
 		// Bounty
 		//----------------------------------------------------------------
-		"BountyGoldMin"				"0"		// Gold earned min.
-		"BountyGoldMax"				"0"		// Gold earned max.
+		"BountyGoldMin"				"100"		// Gold earned min.
+		"BountyGoldMax"				"100"		// Gold earned max.
 
 		// Bounds
 		//----------------------------------------------------------------
 		"BoundsHullName"			"DOTA_HULL_SIZE_SMALL"			// Hull type used for navigation/locomotion.
 		"RingRadius"				"50"
 		"HealthBarOffset"			"150"
-		"MinimapIconSize"			"500"
+		"MinimapIconSize"			"400"
 
 		// Movement
 		//----------------------------------------------------------------
@@ -73,7 +74,7 @@
 
 		// Status
 		//----------------------------------------------------------------
-		"StatusHealth"				"450"		// Base health.
+		"StatusHealth"				"100"		// Base health.
 		"StatusHealthRegen"			"0"			// Health regeneration rate.
 		"StatusMana"				"0"			// Base mana.
 		"StatusManaRegen"			"0"			// Mana regeneration rate.

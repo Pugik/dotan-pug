@@ -11,7 +11,7 @@
 		//-------------------------------------------------------------------
 
 		"error_outpost_cooldown"	"Свиток городского портала перезаряжается."
-		"error_outpost_enemy"		"Невозможно атаковать"
+		"error_outpost_enemy_team"	"Невозможно атаковать"
 		"error_outpost_no_tp"		"Нет зарядов Town Portal Scroll"
 
 		//-------------------------------------------------------------------
@@ -29,6 +29,13 @@
 		//-------------------------------------------------------------------
 		//	Items
 		//-------------------------------------------------------------------
+
+			//-------------------------------------------------------------------
+			//	item_dotan
+			//-------------------------------------------------------------------
+
+		"DOTA_Tooltip_Ability_item_dotan"					"Dotan"
+		"DOTA_Tooltip_Ability_item_dotan_tp_slot"			"Dotan"
 	
 			//-------------------------------------------------------------------
 			//	item_trident_custom
@@ -62,10 +69,25 @@
 			//-------------------------------------------------------------------
 
 		"DOTA_Tooltip_Ability_item_outpost"	"Outpost Kit"
-		"DOTA_Tooltip_Ability_item_outpost_Description"	"<h1>Использование: Развернуть аванпост</h1> При использовании вы установите аванпост в выбранном вами месте. Новая точка телепортации теперь доступна при нажатии на аванпост. <br><br>Аванпост доступен в течение: %tooltip_time_min% минут."
+		"DOTA_Tooltip_Ability_item_outpost_Description"	"<h1>Использование: Развернуть аванпост</h1> При использовании вы установите аванпост в выбранном вами месте. Новая точка телепортации теперь доступна при нажатии на аванпост."
 		"DOTA_Tooltip_Ability_item_outpost_Lore" "Этот предмет обладает огромным потенциалом."
 
 		"npc_dotan_outpost" "Outpost"
+
+			//-------------------------------------------------------------------
+			//	item_demonicon
+			//-------------------------------------------------------------------
+
+		"DOTA_Tooltip_Ability_item_demonicon_Description" "<h1>Активное: Demonic Summoning</h1> Призывает две пары существ от Necronomicon, которые живут %summon_duration% сек. и имеют на 100%% больше здоровья и на 75%% больше урона."
+
+			//-------------------------------------------------------------------
+			//	item_useless
+			//-------------------------------------------------------------------
+
+		"DOTA_Tooltip_Ability_item_useless"					"Useless Item"
+		"DOTA_Tooltip_Ability_item_useless_Description"		"<h1>Use: Бесполезная способность</h1> Странный предмет - действительно ли он бесполезен? Чтобы узнать это, вам придется приобрести его."
+		"DOTA_Tooltip_Ability_item_useless_Note0"			"Да это бесполезный товар! Ты что, не можешь прочитать название, там написано "бесполезный"."
+		"DOTA_Tooltip_Ability_item_useless_Lore" 			"Из предмета сочится странный свет."
 
 		//-------------------------------------------------------------------
 		//	Modifiers
@@ -82,9 +104,10 @@
 			//-------------------------------------------------------------------
 
 		"DOTA_Tooltip_modifier_creep_plyarmor"	"Battle Aura"
-		"DOTA_Tooltip_modifier_creep_plyarmor_Description"	"Вдохновляет всех союзных героев, давая им <b>20</b> единиц брони и <b>20%%</b> сопротивления магии."
+		"DOTA_Tooltip_modifier_creep_plyarmor_Description"	"Вдохновляет всех союзных героев, давая им бонус к броне и сопротивлению магии."
+		
 		"DOTA_Tooltip_modifier_creep_plyarmor_aura"	"Battle Aura"
-		"DOTA_Tooltip_modifier_creep_plyarmor_aura_Description"	"Ваш герой вдохновлен героизмом союзных крипов, вы получаете <b>20</b> единиц брони и <b>20%%</b> сопротивления магии."
+		"DOTA_Tooltip_modifier_creep_plyarmor_aura_Description"	"Герой получает %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE% брони и %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%% сопротивления магии от героизма союзных крипов."
 	
 			//-------------------------------------------------------------------
 			//	modifier_ancient_defense
@@ -98,5 +121,15 @@
 
 		"DOTA_Tooltip_modifier_ancient_defense_bonus"	"Ancient Plea"
 		"DOTA_Tooltip_modifier_ancient_defense_bonus_Description"	"Ваш герой ускоряется на <b>75</b> скорости передвижения."
+
+			//-------------------------------------------------------------------
+			//	modifier_fountain_aura_dotan
+			//------------------------------------------------------------------- 
+		
+		"DOTA_Tooltip_modifier_fountain_aura_dotan"			"Fountain Aura"
+		"DOTA_Tooltip_modifier_fountain_aura_dotan_Description"	"Быстро восстанавливает здоровье и ману союзников поблизости."
+
+		"DOTA_Tooltip_modifier_fountain_aura_dotan_buff"							"Восстановление от фонтана"
+		"DOTA_Tooltip_modifier_fountain_aura_dotan_buff_Description"				"Восстанавливает %dMODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE%%% здоровья и %dMODIFIER_PROPERTY_MANA_REGEN_TOTAL_PERCENTAGE%%% маны в секунду."
 	}
 }

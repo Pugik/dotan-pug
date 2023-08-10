@@ -1,5 +1,5 @@
 //
-// Shops List (07.08.23)
+// Shops List (10.08.23)
 //
 
 "dota_shops"
@@ -179,7 +179,7 @@
 		// 1
 		//		
 		
-		"item"		"item_courier" 
+		"item"		"item_useless" 
 		"item"		"item_blink"
 		"item"		"item_glimmer_cape"
 		"item"		"item_blood_grenade"
@@ -388,7 +388,7 @@
 		
 		"item"		"item_trusty_shovel"
 		"item"		"item_philosophers_stone"
-		"item"		"item_giants_ring"
+		"item"		"item_demonicon"
 		"item"		"item_dagon_5"	
 	}
 
@@ -443,6 +443,7 @@
 		"item"		"item_helm_of_the_overlord"
 		"item"		"item_wind_waker"
 		"item"		"item_trident_custom"
+		"item"		"item_ultimate_scepter_2"
 	}
 	
 	//
@@ -500,7 +501,7 @@
 
 	"pregame"
 	{
-		"item"		"item_courier"
+		"item"		"item_useless"
 		"item"		"item_banana"
 		"item"		"item_blood_grenade"
 		"item"		"item_gauntlets"

@@ -1,0 +1,37 @@
+"DOTAAbilities"
+{
+	"item_useless"
+	{
+		"BaseClass"						"item_lua"
+		"ScriptFile"					"lua_items/item_useless/item_useless.lua"
+        "AbilityTextureName"			"item_useless"
+		
+        "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_BOTH"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+
+		"AbilityCooldown"				"60"
+		"AbilityCastRange"				"280"
+		
+        "ItemCost"						"450"
+		"ItemQuality"					"consumable"
+		"ItemShareability"				"ITEM_FULLY_SHAREABLE"
+		"ItemDroppable"					"1"
+		"ItemPurchasable"				"1"
+		"ItemSellable"					"1"
+		"ItemKillable"					"1"
+		"ItemPermanent"					"0"
+		
+		"ItemStackable"					"1"
+		"ItemStackableMax"				"3"
+		"ItemInitialCharges"			"1"
+
+		//"SecretShop"					"1"
+		//"SideShop"					"1"
+
+		"AbilityValues"
+		{
+			"nothing_chance"			"30"
+		}
+	}
+}

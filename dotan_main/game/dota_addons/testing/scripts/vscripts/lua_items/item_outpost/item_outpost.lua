@@ -5,14 +5,11 @@ LinkLuaModifier("modifier_outpost", "lua_items/item_outpost/item_outpost", LUA_M
 function item_outpost:OnSpellStart()
     if not IsServer() then return end
 
-    self.lifetime = self:GetSpecialValueFor( "lifetime" )
-
     local caster = self:GetCaster()
     local cursor_pos = self:GetCursorPosition()
     
     local ent_outpost = CreateUnitByName("npc_dotan_outpost", cursor_pos, true, caster, caster, caster:GetTeamNumber())
-    ent_outpost:AddNewModifier(caster, self, "modifier_kill", {duration = self.lifetime})
-    ent_outpost:AddNewModifier(caster, self, "modifier_outpost", nil)
+    ent_outpost:AddNewModifier(caster, self, "modifier_outpost", {})
     ent_outpost:SetForwardVector(RandomVector(1))
     
     ent_outpost:StartGesture(ACT_DOTA_IDLE)
@@ -39,22 +36,33 @@ modifier_outpost = class({})
 function modifier_outpost:IsHidden() return true end
 
 function modifier_outpost:CheckState()
-    local state = {
-        [MODIFIER_STATE_NO_HEALTH_BAR] = true,
+    return {
         [MODIFIER_STATE_MAGIC_IMMUNE] = true,
+        [MODIFIER_STATE_NOT_ON_MINIMAP_FOR_ENEMIES] = true,
+        [MODIFIER_STATE_DEBUFF_IMMUNE] = true
     }
-
-    return state
 end
 
 function modifier_outpost:DeclareFunctions() 
     return {
-        MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PHYSICAL,
-        MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_MAGICAL,
-        MODIFIER_PROPERTY_ABSOLUTE_NO_DAMAGE_PURE,
+        MODIFIER_PROPERTY_HEALTHBAR_PIPS,
+        MODIFIER_PROPERTY_INCOMING_DAMAGE_CONSTANT,
     }
 end
 
-function modifier_outpost:GetAbsoluteNoDamagePhysical() return 1 end
-function modifier_outpost:GetAbsoluteNoDamageMagical() return 1 end
-function modifier_outpost:GetAbsoluteNoDamagePure() return 1 end
+function modifier_outpost:GetModifierHealthBarPips() 
+    return 10 
+end
+
+function modifier_outpost:GetModifierIncomingDamageConstant(keys)
+    local damage = keys.damage
+
+    if keys.damage_category == DOTA_DAMAGE_CATEGORY_SPELL then return -damage end
+
+    local damageintotal = damage - 10
+
+    if damageintotal < 10 then
+        damageintotal = damage
+    end
+    return -damageintotal
+end

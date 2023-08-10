@@ -24,10 +24,20 @@ function outpost_tp:OnSpellStart()
 
 	EmitSoundOn("Portal.Loop_Appear", self.end_entity)
 
-	self.outpostEffect = ParticleManager:CreateParticle("particles/econ/events/spring_2021/teleport_end_spring_2021.vpcf", PATTACH_ABSORIGIN_FOLLOW, self.end_entity)
+	local tp_effect = "particles/econ/events/ti5/teleport_end_lvl2_ti5.vpcf"
+
+	if hero:GetTeamNumber() == 2 then
+		tp_effect = "particles/econ/events/ti7/teleport_end_ti7_lvl2.vpcf"
+	end
+	
+	if hero:GetTeamNumber() == 3 then
+		tp_effect = "particles/econ/events/ti6/teleport_end_ti6_lvl2.vpcf"
+	end
+
+	self.outpostEffect = ParticleManager:CreateParticle(tp_effect, PATTACH_ABSORIGIN_FOLLOW, self.end_entity)
 	ParticleManager:SetParticleControl(self.outpostEffect, 0, self.end_entity:GetAbsOrigin())
 	
-	self.heroEffect = ParticleManager:CreateParticle("particles/econ/events/spring_2021/teleport_end_spring_2021.vpcf", PATTACH_ABSORIGIN_FOLLOW, hero)
+	self.heroEffect = ParticleManager:CreateParticle(tp_effect, PATTACH_ABSORIGIN_FOLLOW, hero)
 	ParticleManager:SetParticleControl(self.heroEffect, 0, hero:GetAbsOrigin())
 end
 

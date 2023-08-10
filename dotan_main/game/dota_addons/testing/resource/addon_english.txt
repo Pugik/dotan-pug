@@ -11,7 +11,7 @@
 		//-------------------------------------------------------------------
 
 		"error_outpost_cooldown"	"Town Portal Scroll on Cooldown."
-		"error_outpost_enemy_team"		"Can't Attack"
+		"error_outpost_enemy_team"	"Can't Attack"
 		"error_outpost_no_tp"		"No Town Portal Scroll Charges"
 
 		//-------------------------------------------------------------------
@@ -29,6 +29,13 @@
 		//-------------------------------------------------------------------
 		//	Items
 		//-------------------------------------------------------------------
+
+			//-------------------------------------------------------------------
+			//	item_dotan
+			//-------------------------------------------------------------------
+
+		"DOTA_Tooltip_Ability_item_dotan"					"Dotan"
+		"DOTA_Tooltip_Ability_item_dotan_tp_slot"			"Dotan"
 	
 			//-------------------------------------------------------------------
 			//	item_trident_custom
@@ -62,10 +69,25 @@
 			//-------------------------------------------------------------------
 
 		"DOTA_Tooltip_Ability_item_outpost"	"Outpost Kit"
-		"DOTA_Tooltip_Ability_item_outpost_Description"	"<h1>Use: Deploy Outpost</h1> When used, you will set up an outpost in a location of your choice. A new teleportation point is now available to you by clicking on the outpost. <br><br>The outpost is available during: %tooltip_time_min% minutes."
+		"DOTA_Tooltip_Ability_item_outpost_Description"	"<h1>Use: Deploy Outpost</h1> When used, you will set up an outpost in a location of your choice. A new teleportation point is now available to you by clicking on the outpost."
 		"DOTA_Tooltip_Ability_item_outpost_Lore" "This item has enormous potential."
 
 		"npc_dotan_outpost" "Outpost"
+
+			//-------------------------------------------------------------------
+			//	item_demonicon
+			//-------------------------------------------------------------------
+
+		"DOTA_Tooltip_Ability_item_demonicon_Description" "<h1>Active: Demonic Summoning</h1> Summon 2 sets of Necronomicon Units that last %summon_duration% seconds. Units have 100% more health and 75% more damage."
+
+			//-------------------------------------------------------------------
+			//	item_useless
+			//-------------------------------------------------------------------
+
+		"DOTA_Tooltip_Ability_item_useless"					"Useless Item"
+		"DOTA_Tooltip_Ability_item_useless_Description"		"<h1>Use: Useless Ability</h1> Strange Item is it really useless? You will have to purchase it to find out."
+		"DOTA_Tooltip_Ability_item_useless_Note0"			"Yes it's useless item! Can't you read the name it says useless."
+		"DOTA_Tooltip_Ability_item_useless_Lore" 			"A strange light is oozing from the object."
 
 		//-------------------------------------------------------------------
 		//	Modifiers
@@ -82,9 +104,9 @@
 			//-------------------------------------------------------------------
 
 		"DOTA_Tooltip_modifier_creep_plyarmor"	"Battle Aura"
-		"DOTA_Tooltip_modifier_creep_plyarmor_Description"	"Inspire all allied heroes, giving them <b>20</b> armor and <b>20%%</b> magic resistance."
+		"DOTA_Tooltip_modifier_creep_plyarmor_Description"	"Inspire all allied heroes, giving them armor and magic resistance bonus."
 		"DOTA_Tooltip_modifier_creep_plyarmor_aura"	"Battle Aura"
-		"DOTA_Tooltip_modifier_creep_plyarmor_aura_Description"	"Your hero is inspired by the heroism of allied creeps, you gain <b>20</b> armor and <b>20%%</b> magic resistance."
+		"DOTA_Tooltip_modifier_creep_plyarmor_aura_Description"	"The hero gains %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS_UNIQUE% armor and %dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%% magic resistance from the heroism of allied creeps."
 	
 			//-------------------------------------------------------------------
 			//	modifier_ancient_defense
@@ -98,5 +120,15 @@
 
 		"DOTA_Tooltip_modifier_ancient_defense_bonus"	"Ancient Plea"
 		"DOTA_Tooltip_modifier_ancient_defense_bonus_Description"	"Your hero is accelerated by <b>75</b> movement speed."
+
+			//-------------------------------------------------------------------
+			//	modifier_fountain_aura_dotan
+			//------------------------------------------------------------------- 
+		
+		"DOTA_Tooltip_modifier_fountain_aura_dotan"			"Fountain Aura"
+		"DOTA_Tooltip_modifier_fountain_aura_dotan_Description"	"Quickly restores Health and Mana of nearby allies."
+
+		"DOTA_Tooltip_modifier_fountain_aura_dotan_buff"							"Fountain Rejuvenation"
+		"DOTA_Tooltip_modifier_fountain_aura_dotan_buff_Description"				"Heals %dMODIFIER_PROPERTY_HEALTH_REGEN_PERCENTAGE%%% HP and %dMODIFIER_PROPERTY_MANA_REGEN_TOTAL_PERCENTAGE%%% mana per second."
 	}
 }

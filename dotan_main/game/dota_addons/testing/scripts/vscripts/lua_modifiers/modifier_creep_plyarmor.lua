@@ -69,9 +69,9 @@ function modifier_creep_plyarmor_aura:DeclareFunctions()
 end
 
 function modifier_creep_plyarmor_aura:GetModifierPhysicalArmorBonusUnique()
-	return 20
+	return 5
 end
 
 function modifier_creep_plyarmor_aura:GetModifierMagicalResistanceBonus() -- unique type isnt work? ddx
-	return 20
+	return 6
 end
