@@ -2,12 +2,7 @@
 #base lua_items/item_outpost/unit.txt
 
 "DOTAUnits"
-{	
-    "npc_dota_courier"
-	{
-        "Ability6"					"generic_hidden"
-    }
-	
+{		
     "npc_dota_roshan"
     {
 		"AttackCapabilities"		"DOTA_UNIT_CAP_MELEE_ATTACK"
